@@ -20,7 +20,6 @@ const AccountType = ({ title, description, icon, onPress }: Props) => {
       }}
       onPress={onPress}
       scale={1}
-      hoverStyle={{ scale: 0.97 }}
       pressStyle={{ scale: 0.97 }}
       animation="bouncy"
       space="$3"

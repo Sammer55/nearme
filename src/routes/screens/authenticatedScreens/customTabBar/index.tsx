@@ -1,4 +1,4 @@
-import { Separator, Stack, Tabs } from 'tamagui';
+import { Stack, Tabs } from 'tamagui';
 import { FontAwesome, FontAwesome5 } from '@expo/vector-icons';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { BottomTabBarProps } from '@react-navigation/bottom-tabs';
