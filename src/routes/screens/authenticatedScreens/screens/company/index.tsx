@@ -21,11 +21,11 @@ import { useState } from 'react';
 import schedulePushNotification from '@/utils/pushLocalNotification';
 import { posts } from '@/db/posts';
 import { PostType } from '@/types/posts';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 const CompanyScreen = ({ route }) => {
   const [isRating, setIsRating] = useState(false);
   const [rating, setRating] = useState(0);
-
   const [isFollowing, setIsFollowing] = useState(false);
 
   const companyId = route?.params?.companyId;

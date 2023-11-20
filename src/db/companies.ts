@@ -9,6 +9,8 @@ export const companies: CompanyType[] = [
     address: 'Vila Pedra Branca',
     rate: 4,
     tags: ['gastronomy'],
+    latitude: -23.45686695881129,
+    longitude: -46.64895606907056,
   },
   {
     id: 2,
@@ -17,6 +19,8 @@ export const companies: CompanyType[] = [
     address: 'Vila Pedra Branca',
     rate: 5,
     tags: ['gastronomy'],
+    latitude: -23.45841046914965,
+    longitude: -46.648207276648385,
   },
   {
     id: 3,
@@ -26,5 +30,7 @@ export const companies: CompanyType[] = [
     address: 'Vila Pedra Branca',
     rate: 2.5,
     tags: ['health'],
+    latitude: -23.45817616314675,
+    longitude: -46.648274472773096,
   },
 ];

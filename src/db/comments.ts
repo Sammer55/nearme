@@ -6,7 +6,7 @@ export const comments: CommentType[] = [
     owner: users[0],
     id: 1,
     postId: 1,
-    description: 'I dont know where this is... 👀',
+    description: 'This bakery is close to home! Maybe Ill stop by there... 👀',
   },
   {
     owner: users[1],

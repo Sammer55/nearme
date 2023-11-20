@@ -17,9 +17,9 @@ const Comment = ({ item }: Props) => {
       <Avatar circular>
         <Avatar.Image source={{ uri: item.owner.avatar }} />
       </Avatar>
-      <YStack>
+      <YStack marginRight="$2" flex={1}>
         <H6>{item.owner.name}</H6>
-        <Text>{item.description}</Text>
+        <Text flex={1}>{item.description}</Text>
       </YStack>
     </XStack>
   );

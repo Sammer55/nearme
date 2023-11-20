@@ -10,9 +10,9 @@ export const posts: PostType[] = [
     like_count: 10,
     comment_count: comments.filter((item) => item.postId === 1)?.length,
     description: null,
-    tags: ['services'],
+    tags: ['gastronomy'],
     image:
-      'https://cdn.thinkwebcontent.com/property/33366/7357573/20230127065814/w1220h710/s640x480/x-202546055.jpg',
+      'https://lh3.googleusercontent.com/p/AF1QipNMh8zdpghiclB5pCocoHWrsGomLsAdIgujuJ7w=s680-w680-h510',
   },
   {
     id: 2,

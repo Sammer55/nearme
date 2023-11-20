@@ -1,4 +1,13 @@
-import { Avatar, H6, Image, Stack, Text, XStack, YStack } from 'tamagui';
+import {
+  Avatar,
+  Button,
+  H6,
+  Image,
+  Stack,
+  Text,
+  XStack,
+  YStack,
+} from 'tamagui';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { PostType } from '@/types/posts';
 import { formatDistanceToNow } from 'date-fns';
@@ -17,7 +26,7 @@ const Post = ({ item }: Props) => {
     addSuffix: false,
   });
 
-  const handleGoToUser = () =>
+  const handleNavigateToUser = () =>
     navigation.navigate('Company', { companyId: item?.owner?.id });
 
   const Tags = () => {
@@ -25,6 +34,13 @@ const Post = ({ item }: Props) => {
     return item?.tags?.map((item: TagTypes) => (
       <RenderTag tag={item} onSelectTag={() => {}} size="$2" />
     ));
+  };
+
+  const handleNavigateToMaps = () => {
+    const latitude = item.owner.latitude;
+    const longitude = item.owner.longitude;
+
+    navigation.navigate('Maps', { initialRegion: { latitude, longitude } });
   };
 
   return (
@@ -41,7 +57,7 @@ const Post = ({ item }: Props) => {
       zIndex={1}>
       <XStack>
         <XStack
-          onPress={handleGoToUser}
+          onPress={handleNavigateToUser}
           pressStyle={{ opacity: 0.5 }}
           animation="bouncy"
           flex={1}
@@ -82,23 +98,31 @@ const Post = ({ item }: Props) => {
           />
         </Stack>
       )}
-      <XStack space alignItems="center">
-        <XStack
-          alignItems="center"
-          space="$2"
-          pressStyle={{ opacity: 0.5 }}
-          animation="bouncy">
-          <FontAwesome5 name="heart" size={24} color="white" />
-          <Text>{item?.like_count}</Text>
+      <XStack justifyContent="space-between">
+        <XStack space alignItems="center">
+          <XStack
+            alignItems="center"
+            space="$2"
+            pressStyle={{ opacity: 0.5 }}
+            animation="bouncy">
+            <FontAwesome5 name="heart" size={24} color="white" />
+            <Text>{item?.like_count}</Text>
+          </XStack>
+          <XStack
+            alignItems="center"
+            space="$2"
+            pressStyle={{ opacity: 0.5 }}
+            animation="bouncy">
+            <FontAwesome5 name="comment" size={24} color="white" />
+            <Text>{item?.comment_count}</Text>
+          </XStack>
         </XStack>
-        <XStack
-          alignItems="center"
-          space="$2"
-          pressStyle={{ opacity: 0.5 }}
-          animation="bouncy">
-          <FontAwesome5 name="comment" size={24} color="white" />
-          <Text>{item?.comment_count}</Text>
-        </XStack>
+        <Button
+          onPress={handleNavigateToMaps}
+          circular
+          size="$2"
+          icon={<FontAwesome5 name="map-marker-alt" size={16} color="white" />}
+        />
       </XStack>
     </YStack>
   );
