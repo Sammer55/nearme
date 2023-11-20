@@ -1,13 +1,14 @@
 import { TagTypes } from '../types/tags';
 import Tag from '../components/tag';
 import { ButtonProps, useTheme } from 'tamagui';
+import { memo } from 'react';
 
 type Props = {
   tag: TagTypes;
   onSelectTag: () => void;
 } & ButtonProps;
 
-const RenderTag = ({ tag, onSelectTag, ...rest }: Props) => {
+const RenderTag = memo(({ tag, onSelectTag, ...rest }: Props) => {
   const theme = useTheme();
 
   const tagTypes = {
@@ -24,6 +25,6 @@ const RenderTag = ({ tag, onSelectTag, ...rest }: Props) => {
   };
 
   return <Tag {...rest} item={tagTypes[tag]} onSelectTag={onSelectTag} />;
-};
+});
 
 export default RenderTag;

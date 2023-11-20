@@ -25,8 +25,8 @@ const AccountType = ({ title, description, icon, onPress }: Props) => {
       space="$3"
       alignItems="center"
       flexDirection="row"
-      w="100%"
-      p="$3"
+      width="100%"
+      padding="$3"
       borderWidth={1}
       borderColor="$gray7">
       <LinearGradient
@@ -34,8 +34,8 @@ const AccountType = ({ title, description, icon, onPress }: Props) => {
         start={[0, 0.5]}
         end={[0.5, 0]}
         borderRadius="$8"
-        h={40}
-        w={40}
+        height={40}
+        width={40}
         alignItems="center"
         justifyContent="center">
         {icon}
