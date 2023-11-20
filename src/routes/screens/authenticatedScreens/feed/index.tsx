@@ -3,7 +3,7 @@ import { H3, Separator, Text, YStack } from 'tamagui';
 import { LinearGradient } from 'tamagui/linear-gradient';
 import Tags from './tags';
 import { useMemo, useState } from 'react';
-import { TagType } from '../../../../types/tags';
+import { TagTypes } from '../../../../types/tags';
 import { posts } from '../../../../db/posts';
 import { PostType } from '../../../../types/posts';
 import Post from './post';
@@ -15,13 +15,13 @@ const FeedScreen = () => {
 
   const { top } = useSafeAreaInsets();
 
-  const onSelectTag = (tag: TagType) => setSelectedTag(tag?.label);
+  const onSelectTag = (tag: TagTypes) => setSelectedTag(tag);
 
   const renderItem = ({ item }: { item: PostType }) => <Post item={item} />;
 
   const filteredPosts = useMemo(() => {
     return posts.filter((item) => {
-      if (selectedTag === 'All') return true;
+      if (selectedTag === 'all') return true;
       if (selectedTag) return item.tags.includes(selectedTag);
       if (!selectedTag) return item;
     });
