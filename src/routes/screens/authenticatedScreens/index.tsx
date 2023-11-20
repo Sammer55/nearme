@@ -5,7 +5,10 @@ const Tab = createBottomTabNavigator();
 
 const AuthenticatedScreens = () => {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}>
       <Tab.Screen name="Login" component={LoginScreen} />
     </Tab.Navigator>
   );

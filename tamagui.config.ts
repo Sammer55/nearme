@@ -31,7 +31,6 @@ const animations = createAnimations({
   },
 });
 const headingFont = createInterFont({
-  family: 'Inter, Helvetica, Arial, sans-serif',
   size: {
     1: 12,
     2: 14,

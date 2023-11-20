@@ -20613,7 +20613,7 @@
   "tamaguiConfig": {
     "fonts": {
       "heading": {
-        "family": "Inter, Helvetica, Arial, sans-serif",
+        "family": "Inter",
         "lineHeight": {
           "1": 22,
           "2": 22,
@@ -20692,10 +20692,10 @@
         },
         "face": {
           "100": {
-            "normal": "Inter, Helvetica, Arial, sans-serif"
+            "normal": "Inter"
           },
           "200": {
-            "normal": "Inter, Helvetica, Arial, sans-serif"
+            "normal": "Inter"
           },
           "300": {
             "normal": "InterLight",
