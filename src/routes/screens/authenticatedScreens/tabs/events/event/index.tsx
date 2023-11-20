@@ -50,8 +50,8 @@ const Event = ({ item }: Props) => {
               width={60}
               height={60}
               borderRadius="$3"
-              borderWidth={2}
-              borderColor="$background"
+              borderWidth={1}
+              borderColor="white"
             />
             <Stack>
               <XStack

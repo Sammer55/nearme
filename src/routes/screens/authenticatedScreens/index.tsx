@@ -1,13 +1,17 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import FeedScreen from './feed';
+import FeedScreen from './tabs/feed';
 import { useTheme } from 'tamagui';
-import CustomTabBar from './customTabBar';
-import ListScreen from './list';
-import EventsScreen from './events';
+import CustomTabBar from './tabs/customTabBar';
+import ListScreen from './tabs/list';
+import EventsScreen from './tabs/events';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import CompanyScreen from './screens/company';
+import PostScreen from './screens/post';
 
 const Tab = createBottomTabNavigator();
+const Stack = createNativeStackNavigator();
 
-const AuthenticatedScreens = () => {
+const TabsScreens = () => {
   const theme = useTheme();
 
   return (
@@ -24,6 +28,32 @@ const AuthenticatedScreens = () => {
       <Tab.Screen name="Events" component={EventsScreen} />
       <Tab.Screen name="Profile" component={FeedScreen} />
     </Tab.Navigator>
+  );
+};
+
+const AuthenticatedScreens = () => {
+  return (
+    <Stack.Navigator
+      initialRouteName="Tabs"
+      screenOptions={{
+        headerShown: false,
+      }}>
+      <Stack.Screen name="Tabs" component={TabsScreens} />
+      <Stack.Screen
+        name="Company"
+        component={CompanyScreen}
+        options={{
+          presentation: 'formSheet',
+        }}
+      />
+      <Stack.Screen
+        name="Post"
+        component={PostScreen}
+        options={{
+          presentation: 'formSheet',
+        }}
+      />
+    </Stack.Navigator>
   );
 };
 

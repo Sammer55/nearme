@@ -17,7 +17,11 @@ const Tags = ({ onSelectTag }: Props) => {
         paddingHorizontal: 16,
       }}>
       {tags.map((item: TagTypes) => (
-        <RenderTag tag={item} onSelectTag={() => onSelectTag(item)} />
+        <RenderTag
+          key={item}
+          tag={item}
+          onSelectTag={() => onSelectTag(item)}
+        />
       ))}
     </ScrollView>
   );

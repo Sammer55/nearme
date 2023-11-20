@@ -18,7 +18,7 @@ const Post = ({ item }: Props) => {
   });
 
   const handleGoToUser = () =>
-    navigation.navigate('User', { userId: item?.owner?.id });
+    navigation.navigate('Company', { companyId: item?.owner?.id });
 
   const Tags = () => {
     if (item?.tags.length <= 0) return;
@@ -69,6 +69,7 @@ const Post = ({ item }: Props) => {
       </YStack>
       {!!item?.image && (
         <Stack
+          onPress={() => navigation.navigate('Post', { postId: item?.id })}
           animation="lazy"
           scale={1}
           pressStyle={{ scale: 1.05 }}
