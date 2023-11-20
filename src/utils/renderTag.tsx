@@ -5,7 +5,7 @@ import { memo } from 'react';
 
 type Props = {
   tag: TagTypes;
-  onSelectTag: () => void;
+  onSelectTag?: () => void;
 } & ButtonProps;
 
 const RenderTag = memo(({ tag, onSelectTag, ...rest }: Props) => {

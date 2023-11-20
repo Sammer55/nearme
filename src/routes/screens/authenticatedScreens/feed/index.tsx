@@ -47,7 +47,7 @@ const FeedScreen = () => {
     <LinearGradient
       flex={1}
       paddingTop={top + 16}
-      colors={['black', '$blue4Dark']}
+      colors={['$blue1', 'black']}
       start={[1, 1]}
       end={[0, 0.2]}
       position="relative">

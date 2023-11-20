@@ -56,7 +56,7 @@ const Post = ({ item }: Props) => {
           </Avatar>
           <YStack>
             <H6>{item?.owner?.name}</H6>
-            <Text>{item?.owner?.neighborhood}</Text>
+            <Text>{item?.owner?.address}</Text>
           </YStack>
         </XStack>
 
@@ -71,7 +71,7 @@ const Post = ({ item }: Props) => {
         <Stack
           animation="lazy"
           scale={1}
-          pressStyle={{ scale: 1.3 }}
+          pressStyle={{ scale: 1.05 }}
           zIndex={9}>
           <Image
             borderRadius="$4"

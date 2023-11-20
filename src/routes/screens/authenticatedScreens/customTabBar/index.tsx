@@ -51,7 +51,7 @@ const CustomTabBar = (props: Props) => {
       flexDirection="column"
       width="100%">
       <Tabs.List
-        borderTopWidth={1}
+        borderTopWidth={2}
         borderColor="$backgroundHover"
         aria-label="Tabs"
         borderRadius={0}>

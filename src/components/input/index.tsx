@@ -6,9 +6,8 @@ import { FontAwesome5 } from '@expo/vector-icons';
 type Props = {
   control: any;
   name: string;
-  rest?: InputProps;
   secureTextEntry?: boolean;
-};
+} & InputProps
 
 const Input = ({ control, name, secureTextEntry = false, ...rest }: Props) => {
   const [passwordIsVisible, setPasswordIsVisible] = useState(secureTextEntry);

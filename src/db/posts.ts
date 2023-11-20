@@ -1,14 +1,10 @@
 import { PostType } from '../types/posts';
+import { companies } from './companies';
 
 export const posts: PostType[] = [
   {
     id: 1,
-    owner: {
-      avatar: 'https://avatars.githubusercontent.com/u/16936043?v=4',
-      name: 'Vadim Savin',
-      neighborhood: 'Santa Cruz',
-      id: 1,
-    },
+    owner: companies[0],
     created_at: '2023-11-20T03:24:00',
     like_count: 10,
     comment_count: 12,
@@ -19,18 +15,24 @@ export const posts: PostType[] = [
   },
   {
     id: 2,
-    owner: {
-      avatar: 'https://avatars.githubusercontent.com/u/80492895?v=4',
-      name: 'Sammer',
-      neighborhood: 'Vila Pedra Branca',
-      id: 2,
-    },
+    owner: companies[1],
     created_at: '2023-11-19T10:40:00',
     like_count: 3,
     comment_count: 8,
     description: "Here's a great bakery in the neighborhood where I live!",
     tags: ['gastronomy'],
     image:
-      'https://resizedimgs.vivareal.com/fit-in/870x653/named.images.sp/833fb70f92a1729b70dddf7370a0ccfb/foto-67-de-casa-de-condominio-com-3-quartos-para-alugar-100m-em-pedra-branca-sao-paulo.jpg',
+      'https://fastly.4sqi.net/img/general/200x200/26363371_HV0sA2XFtV2jD4B_v4OzJ94DnOO3ymdWr0yieT7Ikj8.jpg',
+  },
+  {
+    id: 3,
+    owner: companies[2],
+    created_at: '2023-11-10T10:40:00',
+    like_count: 1,
+    comment_count: 2,
+    description: 'The medicines are on sale here at the pharmacy!',
+    tags: ['health'],
+    image:
+      'https://conteudo.imguol.com.br/c/entretenimento/02/2019/12/11/remedios-em-farmacia-1576076447681_v2_4x3.jpg',
   },
 ];
