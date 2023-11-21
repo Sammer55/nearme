@@ -8,6 +8,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import CompanyScreen from './screens/company';
 import PostScreen from './screens/post';
 import MapsScreen from './screens/maps';
+import EventScreen from './screens/event';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -40,15 +41,10 @@ const AuthenticatedScreens = () => {
         headerShown: false,
       }}>
       <Stack.Screen name="Tabs" component={TabsScreens} />
-      <Stack.Screen
-        name="Company"
-        component={CompanyScreen}
-        options={{
-          presentation: 'formSheet',
-        }}
-      />
+      <Stack.Screen name="Company" component={CompanyScreen} />
       <Stack.Screen name="Post" component={PostScreen} />
       <Stack.Screen name="Maps" component={MapsScreen} />
+      <Stack.Screen name="Event" component={EventScreen} />
     </Stack.Navigator>
   );
 };
