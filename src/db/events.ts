@@ -15,5 +15,7 @@ export const events: EventType[] = [
     tags: ['gastronomy'],
     description:
       "Join us for an unforgettable experience at the Live Show with Independent Artists! 🎤🎶 Immerse yourself in the vibrant atmosphere of São Paulo, Brazil, as talented musicians take the stage. Hosted by Bakery Lenilce from Vila Pedra Branca, this event celebrates local talent and the spirit of the community. Don't miss out on the perfect blend of music and gastronomy! 🍽️ Save the date: November 21, 2023, at 12:00 PM. Discover the magic of nearby talents in the heart of São Paulo. See you there! 🌟 #LocalArtists #CommunitySpirit #SaoPauloEvents",
+    views: 5,
+    checks: 10,
   },
 ];

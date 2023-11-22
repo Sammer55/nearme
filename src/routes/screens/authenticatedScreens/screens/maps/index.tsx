@@ -20,16 +20,21 @@ import Tags from '../../tabs/feed/tags';
 import { TagTypes } from '@/types/tags';
 import { LinearGradient } from 'tamagui/linear-gradient';
 import { StatusBar } from 'expo-status-bar';
-
-const DEFAULT_LATITUDE = -23.4522276968196;
-const DEFAULT_LONGITUDE = -46.64481884656898;
+import { useLocation } from '@/context/location';
+import openGoogleMapsWithDirections from '@/utils/openDirections';
 
 const MapsScreen = ({ route }) => {
   const [selectedTag, setSelectedTag] = useState<TagTypes | null>();
 
   const { top } = useSafeAreaInsets();
+  const { location } = useLocation();
 
-  const initialRegion = useMemo(() => route?.params?.initialRegion, [route]);
+  const screenIsFocused = useIsFocused();
+
+  const initialRegion = useMemo(
+    () => route?.params?.initialRegion,
+    [route, screenIsFocused],
+  );
 
   const navigation = useNavigation();
   const handleOpenMarker = (id: number, type: 'company' | 'event') => {
@@ -39,8 +44,8 @@ const MapsScreen = ({ route }) => {
     if (type === 'event') return navigation.navigate('Event', { eventId: id });
   };
 
-  const latitude = initialRegion?.latitude || DEFAULT_LATITUDE;
-  const longitude = initialRegion?.longitude || DEFAULT_LONGITUDE;
+  const latitude = initialRegion?.latitude ?? location?.coords.latitude;
+  const longitude = initialRegion?.longitude ?? location?.coords.longitude;
 
   const companiesArray = companies.map((item) => ({
     ...item,
@@ -65,7 +70,15 @@ const MapsScreen = ({ route }) => {
     [selectedTag],
   );
 
-  const screenIsFocused = useIsFocused();
+  const handleGetThere = () => {
+    if (!!location)
+      openGoogleMapsWithDirections({
+        userLatitude: location?.coords.latitude,
+        userLongitude: location?.coords.longitude,
+        destinyLatitude: latitude,
+        destinyLongitude: longitude,
+      });
+  };
 
   useEffect(() => {
     if (screenIsFocused) setSelectedTag(null);
@@ -138,7 +151,7 @@ const MapsScreen = ({ route }) => {
         zIndex={100_000}
         animation="lazy"
         defaultOpen
-        snapPoints={[20, 5]}>
+        snapPoints={[25, 5]}>
         <Sheet.Handle />
         <Sheet.Frame
           paddingVertical="$4"
@@ -169,6 +182,14 @@ const MapsScreen = ({ route }) => {
 
           <Stack backgroundColor="$backgroundPress" paddingVertical="$2">
             <Tags onSelectTag={setSelectedTag} />
+          </Stack>
+          <Stack paddingHorizontal="$3">
+            <Button
+              onPress={handleGetThere}
+              iconAfter={<FontAwesome5 name="route" size={14} color="white" />}
+              backgroundColor="$green9">
+              How to get there?
+            </Button>
           </Stack>
         </Sheet.Frame>
       </Sheet>
