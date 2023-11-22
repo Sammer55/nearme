@@ -10,7 +10,7 @@ const haversineDistance = ({
   userLongitude,
   destinyLatitude,
   destinyLongitude,
-}: Props): string => {
+}: Props) => {
   const earthRadius = 6371;
 
   const toRadians = (angle: number) => angle * (Math.PI / 180);

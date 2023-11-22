@@ -21,7 +21,15 @@ import { formatDistanceToNow } from 'date-fns';
 import Input from '@/components/input';
 import { useForm } from 'react-hook-form';
 
-const PostScreen = ({ route }) => {
+type Props = {
+  route: {
+    params?: {
+      postId?: number;
+    };
+  };
+};
+
+const PostScreen = ({ route }: Props) => {
   const [isFollowing, setIsFollowing] = useState(false);
 
   const { bottom, top } = useSafeAreaInsets();
@@ -119,7 +127,7 @@ const PostScreen = ({ route }) => {
             width="100%"
             justifyContent="space-between"
             alignItems="flex-end">
-            <Comments postId={postId} />
+            {!!postId && <Comments postId={postId} />}
             <YStack
               space
               enterStyle={{

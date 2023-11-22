@@ -24,8 +24,17 @@ import { PostType } from '@/types/posts';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import * as Clipboard from 'expo-clipboard';
 import { useToast } from 'react-native-toast-notifications';
+import { ScheduleType } from '@/types/companies';
 
-const CompanyScreen = ({ route }) => {
+type Props = {
+  route: {
+    params: {
+      companyId?: number;
+    };
+  };
+};
+
+const CompanyScreen = ({ route }: Props) => {
   const [isShowingContacts, setIsShowingContacts] = useState(false);
   const [isRating, setIsRating] = useState(false);
   const [rating, setRating] = useState(0);
@@ -86,7 +95,7 @@ const CompanyScreen = ({ route }) => {
     setIsShowingContacts(false);
   };
 
-  const ScheduleDay = ({ item }) => {
+  const ScheduleDay = ({ item }: { item: ScheduleType }) => {
     return (
       <XStack space width="80%">
         <Stack flex={0.5}>

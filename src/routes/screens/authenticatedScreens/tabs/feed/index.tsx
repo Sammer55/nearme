@@ -14,7 +14,7 @@ import { useNavigation } from '@react-navigation/native';
 import { useToast } from 'react-native-toast-notifications';
 
 const FeedScreen = () => {
-  const [selectedTag, setSelectedTag] = useState<string | null>(null);
+  const [selectedTag, setSelectedTag] = useState<TagTypes | null>(null);
 
   const { top } = useSafeAreaInsets();
 

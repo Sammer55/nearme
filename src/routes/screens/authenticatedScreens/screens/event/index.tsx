@@ -23,13 +23,21 @@ import { useLocation } from '@/context/location';
 import haversineDistance from '@/utils/haversineDistance';
 import openGoogleMapsWithDirections from '@/utils/openDirections';
 
+type Props = {
+  route: {
+    params: {
+      eventId?: number;
+    };
+  };
+};
+
 type DetailsItemProps = {
   icon: React.ReactNode;
   text?: string | number;
   onPress?: () => void;
 };
 
-const EventScreen = ({ route }) => {
+const EventScreen = ({ route }: Props) => {
   const [isChecked, setIsChecked] = useState(false);
 
   const eventId = route?.params?.eventId;
