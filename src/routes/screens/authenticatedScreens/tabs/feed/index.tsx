@@ -11,6 +11,7 @@ import { FlatList } from 'react-native';
 import EmptyState from '@/components/emptyState';
 import { FontAwesome } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
+import { useToast } from 'react-native-toast-notifications';
 
 const FeedScreen = () => {
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
@@ -18,6 +19,8 @@ const FeedScreen = () => {
   const { top } = useSafeAreaInsets();
 
   const navigation = useNavigation();
+
+  const toast = useToast();
 
   const onSelectTag = (tag: TagTypes) => setSelectedTag(tag);
 
@@ -31,20 +34,37 @@ const FeedScreen = () => {
     });
   }, [selectedTag]);
 
+  const handleLogout = () => {
+    toast.show('See you later! 👋', {
+      type: 'danger',
+      placement: 'bottom',
+      duration: 4000,
+    });
+    navigation.navigate('AuthScreens');
+  };
+
   const ListHeaderComponent = useCallback(
     () => (
       <YStack space="$3">
         <YStack paddingHorizontal="$3" space="$1">
           <XStack justifyContent="space-between">
             <H3>Explore</H3>
-            <Button
-              onPress={() => navigation.navigate('Alerts')}
-              backgroundColor="$blue9"
-              pressStyle={{ backgroundColor: '$blue8' }}
-              height={22}
-              icon={
-                <FontAwesome name="bullhorn" size={16} color="white" />
-              }></Button>
+            <XStack space="$2">
+              <Button
+                onPress={() => navigation.navigate('Alerts')}
+                backgroundColor="$blue9"
+                pressStyle={{ backgroundColor: '$blue8' }}
+                height={22}
+                icon={<FontAwesome name="bullhorn" size={16} color="white" />}
+              />
+              <Button
+                onPress={handleLogout}
+                backgroundColor="$red9"
+                pressStyle={{ backgroundColor: '$red9' }}
+                height={22}
+                icon={<FontAwesome name="power-off" size={16} color="white" />}
+              />
+            </XStack>
           </XStack>
           <Text fontSize="$5">
             Connect and Support Local Businesses{' '}
