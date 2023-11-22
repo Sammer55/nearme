@@ -128,7 +128,7 @@ const MapsScreen = ({ route }) => {
         {filteredMarkers?.map(({ id, latitude, longitude, avatar, type }) => {
           return (
             <Marker
-              key={id}
+              key={`${id}-${type}`}
               coordinate={{
                 latitude,
                 longitude,
@@ -151,7 +151,7 @@ const MapsScreen = ({ route }) => {
         zIndex={100_000}
         animation="lazy"
         defaultOpen
-        snapPoints={[25, 5]}>
+        snapPoints={[initialRegion ? 25 : 20, 5]}>
         <Sheet.Handle />
         <Sheet.Frame
           paddingVertical="$4"
@@ -183,14 +183,18 @@ const MapsScreen = ({ route }) => {
           <Stack backgroundColor="$backgroundPress" paddingVertical="$2">
             <Tags onSelectTag={setSelectedTag} />
           </Stack>
-          <Stack paddingHorizontal="$3">
-            <Button
-              onPress={handleGetThere}
-              iconAfter={<FontAwesome5 name="route" size={14} color="white" />}
-              backgroundColor="$green9">
-              How to get there?
-            </Button>
-          </Stack>
+          {!!initialRegion && (
+            <Stack paddingHorizontal="$3">
+              <Button
+                onPress={handleGetThere}
+                iconAfter={
+                  <FontAwesome5 name="route" size={14} color="white" />
+                }
+                backgroundColor="$green9">
+                How to get there?
+              </Button>
+            </Stack>
+          )}
         </Sheet.Frame>
       </Sheet>
     </View>

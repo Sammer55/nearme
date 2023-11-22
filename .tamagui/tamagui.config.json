@@ -8,9 +8,9 @@
             "acceptsClassName": true,
             "isText": true,
             "defaultProps": {
+              "fontFamily": "$body",
               "suppressHighlighting": true,
               "unstyled": false,
-              "fontFamily": "$body",
               "tag": "a",
               "accessibilityRole": "link"
             },
@@ -529,6 +529,7 @@
             "acceptsClassName": true,
             "isText": true,
             "defaultProps": {
+              "fontFamily": "unset",
               "suppressHighlighting": true,
               "opacity": 0,
               "lineHeight": 0,
@@ -2309,6 +2310,7 @@
             "acceptsClassName": true,
             "isText": true,
             "defaultProps": {
+              "fontFamily": "unset",
               "suppressHighlighting": true,
               "unstyled": false
             },
@@ -4307,9 +4309,9 @@
             "acceptsClassName": true,
             "isText": true,
             "defaultProps": {
+              "fontFamily": "$body",
               "suppressHighlighting": true,
-              "unstyled": false,
-              "fontFamily": "$body"
+              "unstyled": false
             },
             "inlineWhenUnflattened": {},
             "variants": {
@@ -8698,9 +8700,9 @@
             "acceptsClassName": true,
             "isText": true,
             "defaultProps": {
+              "fontFamily": "$body",
               "suppressHighlighting": true,
               "unstyled": false,
-              "fontFamily": "$body",
               "tag": "label"
             },
             "inlineWhenUnflattened": {},
@@ -8909,9 +8911,9 @@
             "acceptsClassName": true,
             "isText": true,
             "defaultProps": {
+              "fontFamily": "$body",
               "suppressHighlighting": true,
               "unstyled": false,
-              "fontFamily": "$body",
               "tag": "label"
             },
             "inlineWhenUnflattened": {},
@@ -9720,9 +9722,9 @@
             "acceptsClassName": true,
             "isText": true,
             "defaultProps": {
+              "fontFamily": "$body",
               "suppressHighlighting": true,
-              "unstyled": false,
-              "fontFamily": "$body"
+              "unstyled": false
             },
             "inlineWhenUnflattened": {},
             "variants": {
@@ -9926,9 +9928,9 @@
             "acceptsClassName": true,
             "isText": true,
             "defaultProps": {
+              "fontFamily": "$body",
               "suppressHighlighting": true,
-              "unstyled": false,
-              "fontFamily": "$body"
+              "unstyled": false
             },
             "inlineWhenUnflattened": {},
             "variants": {
@@ -10128,9 +10130,9 @@
             "acceptsClassName": true,
             "isText": true,
             "defaultProps": {
+              "fontFamily": "$body",
               "suppressHighlighting": true,
-              "unstyled": false,
-              "fontFamily": "$body"
+              "unstyled": false
             },
             "inlineWhenUnflattened": {},
             "variants": {
@@ -18620,9 +18622,9 @@
             "acceptsClassName": true,
             "isText": true,
             "defaultProps": {
+              "fontFamily": "$body",
               "suppressHighlighting": true,
-              "unstyled": false,
-              "fontFamily": "$body"
+              "unstyled": false
             },
             "inlineWhenUnflattened": {},
             "variants": {
@@ -18818,9 +18820,9 @@
             "acceptsClassName": true,
             "isText": true,
             "defaultProps": {
+              "fontFamily": "$body",
               "suppressHighlighting": true,
               "unstyled": false,
-              "fontFamily": "$body",
               "tag": "p",
               "userSelect": "auto",
               "color": "$color",
@@ -19017,9 +19019,9 @@
             "acceptsClassName": true,
             "isText": true,
             "defaultProps": {
+              "fontFamily": "$heading",
               "suppressHighlighting": true,
               "unstyled": false,
-              "fontFamily": "$heading",
               "tag": "h1",
               "userSelect": "auto",
               "color": "$color",
@@ -19218,9 +19220,9 @@
             "acceptsClassName": true,
             "isText": true,
             "defaultProps": {
+              "fontFamily": "$heading",
               "suppressHighlighting": true,
               "unstyled": false,
-              "fontFamily": "$heading",
               "tag": "h2",
               "userSelect": "auto",
               "color": "$color",
@@ -19419,9 +19421,9 @@
             "acceptsClassName": true,
             "isText": true,
             "defaultProps": {
+              "fontFamily": "$heading",
               "suppressHighlighting": true,
               "unstyled": false,
-              "fontFamily": "$heading",
               "tag": "h3",
               "userSelect": "auto",
               "color": "$color",
@@ -19620,9 +19622,9 @@
             "acceptsClassName": true,
             "isText": true,
             "defaultProps": {
+              "fontFamily": "$heading",
               "suppressHighlighting": true,
               "unstyled": false,
-              "fontFamily": "$heading",
               "tag": "h4",
               "userSelect": "auto",
               "color": "$color",
@@ -19821,9 +19823,9 @@
             "acceptsClassName": true,
             "isText": true,
             "defaultProps": {
+              "fontFamily": "$heading",
               "suppressHighlighting": true,
               "unstyled": false,
-              "fontFamily": "$heading",
               "tag": "h5",
               "userSelect": "auto",
               "color": "$color",
@@ -20022,9 +20024,9 @@
             "acceptsClassName": true,
             "isText": true,
             "defaultProps": {
+              "fontFamily": "$heading",
               "suppressHighlighting": true,
               "unstyled": false,
-              "fontFamily": "$heading",
               "tag": "h6",
               "userSelect": "auto",
               "color": "$color",
@@ -20223,9 +20225,9 @@
             "acceptsClassName": true,
             "isText": true,
             "defaultProps": {
+              "fontFamily": "$heading",
               "suppressHighlighting": true,
               "unstyled": false,
-              "fontFamily": "$heading",
               "tag": "span",
               "userSelect": "auto",
               "color": "$color",
@@ -47631,6 +47633,7 @@
         }
       }
     },
+    "unset": {},
     "settings": {
       "webContainerType": "size"
     },

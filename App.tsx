@@ -9,6 +9,8 @@ import * as Notifications from 'expo-notifications';
 import { useEffect } from 'react';
 import registerForPushNotificationsAsync from './src/utils/registerForPushNotificationsAsync';
 import { LocationProvider } from './src/context/location';
+import { ToastProvider } from 'react-native-toast-notifications';
+import { FontAwesome5 } from '@expo/vector-icons';
 
 LogBox.ignoreAllLogs();
 
@@ -36,7 +38,13 @@ export default function App() {
     <TamaguiProvider config={config}>
       <StatusBar style="light" />
       <LocationProvider>
-        <Root />
+        <ToastProvider
+          successColor="#47B881"
+          successIcon={
+            <FontAwesome5 name="check-circle" size={16} color="white" />
+          }>
+          <Root />
+        </ToastProvider>
       </LocationProvider>
     </TamaguiProvider>
   );
