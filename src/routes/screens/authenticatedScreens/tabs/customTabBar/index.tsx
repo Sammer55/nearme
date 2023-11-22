@@ -27,11 +27,15 @@ const CustomTabBar = (props: Props) => {
           backgroundColor={isCurrent ? '$primary' : 'transparent'}
           onPress={() => handleNavigation(page)}
           flex={1}
+          pressStyle={{
+            opacity: 0.5,
+          }}
+          animation="bouncy"
           value={page}>
           <Stack
             animation="bouncy"
             enterStyle={{
-              scale: isCurrent ? 1.3 : 1,
+              scale: isCurrent ? 1.5 : 1,
               rotate: isCurrent ? '15deg' : '0deg',
             }}>
             {children}
@@ -63,9 +67,6 @@ const CustomTabBar = (props: Props) => {
         </CustomTab>
         <CustomTab page="Events">
           <FontAwesome name="calendar-o" size={16} color="white" />
-        </CustomTab>
-        <CustomTab page="Profile">
-          <FontAwesome5 name="user-astronaut" size={16} color="white" />
         </CustomTab>
       </Tabs.List>
     </Tabs>

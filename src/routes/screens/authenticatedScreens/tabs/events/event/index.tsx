@@ -4,6 +4,8 @@ import { FontAwesome } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import { EventType } from '@/types/events';
 import { formatDistanceToNow } from 'date-fns';
+import { useLocation } from '@/context/location';
+import haversineDistance from '@/utils/haversineDistance';
 
 type Props = {
   item: EventType;
@@ -18,6 +20,17 @@ const Event = ({ item }: Props) => {
   const startDate = formatDistanceToNow(new Date(item.date), {
     addSuffix: true,
   });
+
+  const { location } = useLocation();
+
+  const distance = !!location
+    ? haversineDistance({
+        userLatitude: location?.coords?.latitude,
+        userLongitude: location?.coords?.longitude,
+        destinyLatitude: item.owner.latitude,
+        destinyLongitude: item.owner.longitude,
+      })
+    : '0';
 
   return (
     <Card
@@ -53,7 +66,7 @@ const Event = ({ item }: Props) => {
               borderWidth={1}
               borderColor="white"
             />
-            <Stack>
+            <YStack alignItems="flex-end" space="$1">
               <XStack
                 paddingVertical="$1"
                 paddingHorizontal="$2"
@@ -65,7 +78,15 @@ const Event = ({ item }: Props) => {
                 <FontAwesome name="calendar-o" size={16} color="white" />
                 <H6 fontSize="$3">{startDate}</H6>
               </XStack>
-            </Stack>
+              <Stack
+                backgroundColor="$background"
+                borderRadius="$1"
+                paddingHorizontal="$2"
+                alignItems="center"
+                justifyContent="center">
+                <Text>{distance}</Text>
+              </Stack>
+            </YStack>
           </XStack>
 
           <YStack space="$2">

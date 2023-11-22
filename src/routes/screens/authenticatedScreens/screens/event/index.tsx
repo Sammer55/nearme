@@ -19,6 +19,9 @@ import RenderTag from '@/utils/renderTag';
 import { useState } from 'react';
 import schedulePushNotification from '@/utils/pushLocalNotification';
 import { formatDistanceToNow } from 'date-fns';
+import { useLocation } from '@/context/location';
+import haversineDistance from '@/utils/haversineDistance';
+import openGoogleMapsWithDirections from '@/utils/openDirections';
 
 type DetailsItemProps = {
   icon: React.ReactNode;
@@ -65,6 +68,21 @@ const EventScreen = ({ route }) => {
     formatDistanceToNow(new Date(event?.date), {
       addSuffix: true,
     });
+
+  const { location } = useLocation();
+
+  const coords = !!event &&
+    !!location && {
+      userLatitude: location?.coords?.latitude,
+      userLongitude: location?.coords?.longitude,
+      destinyLatitude: event?.latitude,
+      destinyLongitude: event?.longitude,
+    };
+
+  const distance = !!coords ? haversineDistance(coords) : '0';
+
+  const handleOpenDirections = () =>
+    !!coords && openGoogleMapsWithDirections(coords);
 
   const DetailsItem = ({ icon, text, onPress }: DetailsItemProps) => {
     const isPressable = !!onPress;
@@ -199,6 +217,12 @@ const EventScreen = ({ route }) => {
                   }
                   text="Maps"
                   onPress={handleOpenMaps}
+                />
+
+                <DetailsItem
+                  icon={<FontAwesome5 name="route" size={16} color="white" />}
+                  text={distance}
+                  onPress={handleOpenDirections}
                 />
               </XStack>
 

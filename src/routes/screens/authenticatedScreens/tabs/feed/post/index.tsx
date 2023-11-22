@@ -14,6 +14,8 @@ import { formatDistanceToNow } from 'date-fns';
 import { useNavigation } from '@react-navigation/native';
 import RenderTag from '@/utils/renderTag';
 import { TagTypes } from '@/types/tags';
+import { useLocation } from '@/context/location';
+import haversineDistance from '@/utils/haversineDistance';
 
 type Props = {
   item: PostType;
@@ -23,7 +25,7 @@ const Post = ({ item }: Props) => {
   const navigation = useNavigation();
 
   const createdAt = formatDistanceToNow(new Date(item.created_at), {
-    addSuffix: false,
+    addSuffix: true,
   });
 
   const handleNavigateToUser = () =>
@@ -32,7 +34,7 @@ const Post = ({ item }: Props) => {
   const Tags = () => {
     if (item?.tags.length <= 0) return;
     return item?.tags?.map((item: TagTypes) => (
-      <RenderTag tag={item} onSelectTag={() => {}} size="$2" />
+      <RenderTag hideLabel tag={item} onSelectTag={() => {}} size="$2" />
     ));
   };
 
@@ -42,6 +44,17 @@ const Post = ({ item }: Props) => {
 
     navigation.navigate('Maps', { initialRegion: { latitude, longitude } });
   };
+
+  const { location } = useLocation();
+
+  const distance = !!location
+    ? haversineDistance({
+        userLatitude: location?.coords?.latitude,
+        userLongitude: location?.coords?.longitude,
+        destinyLatitude: item.owner.latitude,
+        destinyLongitude: item.owner.longitude,
+      })
+    : '0';
 
   return (
     <YStack
@@ -119,10 +132,10 @@ const Post = ({ item }: Props) => {
         </XStack>
         <Button
           onPress={handleNavigateToMaps}
-          circular
           size="$2"
-          icon={<FontAwesome5 name="map-marker-alt" size={16} color="white" />}
-        />
+          icon={<FontAwesome5 name="map-marker-alt" size={16} color="white" />}>
+          {distance}
+        </Button>
       </XStack>
     </YStack>
   );
