@@ -22,7 +22,7 @@ import Input from '@/components/input';
 import { useForm } from 'react-hook-form';
 
 type Props = {
-  route: {
+  route?: {
     params?: {
       postId?: number;
     };
@@ -81,47 +81,51 @@ const PostScreen = ({ route }: Props) => {
         flex={1}
         position="relative"
         justifyContent="space-between">
-        <XStack
-          backgroundColor="$background"
-          paddingVertical="$2"
-          paddingHorizontal="$2"
-          borderRadius="$12"
-          enterStyle={{
-            y: 100,
-          }}
-          animation="bouncy"
-          alignItems="center"
-          justifyContent="space-between">
-          <XStack space="$3" flex={1}>
-            <Avatar circular>
-              <Avatar.Image source={{ uri: post?.owner.avatar }} />
-            </Avatar>
-            <YStack flex={1}>
-              <XStack space="$2">
-                <H6 numberOfLines={1} flex={1} space="$2">
-                  {post?.owner?.name}
-                  <H6
-                    pressStyle={{
-                      opacity: 0.5,
-                    }}
-                    animation="bouncy"
-                    color={isFollowing ? '$red11' : '$green11'}
-                    onPress={handleFollowCompany}>
-                    {isFollowing ? 'Unfollow' : 'Follow'}
+        <YStack space="$3">
+          <XStack
+            backgroundColor="$background"
+            paddingVertical="$2"
+            paddingHorizontal="$2"
+            borderRadius="$12"
+            enterStyle={{
+              y: 100,
+            }}
+            animation="bouncy"
+            alignItems="center"
+            justifyContent="space-between">
+            <XStack space="$3" flex={1}>
+              <Avatar circular>
+                <Avatar.Image source={{ uri: post?.owner.avatar }} />
+              </Avatar>
+              <YStack flex={1}>
+                <XStack space="$2">
+                  <H6 numberOfLines={1} flex={1} space="$2">
+                    {post?.owner?.name}
+                    <H6
+                      pressStyle={{
+                        opacity: 0.5,
+                      }}
+                      animation="bouncy"
+                      color={isFollowing ? '$red11' : '$green11'}
+                      onPress={handleFollowCompany}>
+                      {isFollowing ? 'Unfollow' : 'Follow'}
+                    </H6>
                   </H6>
-                </H6>
-              </XStack>
-              <Text>{createdAt}</Text>
-            </YStack>
+                </XStack>
+                <Text>{createdAt}</Text>
+              </YStack>
+            </XStack>
+            <Button
+              marginRight="$2"
+              onPress={() => navigation.goBack()}
+              circular
+              size="$1"
+              icon={<FontAwesome name="chevron-down" size={10} color="white" />}
+            />
           </XStack>
-          <Button
-            marginRight="$2"
-            onPress={() => navigation.goBack()}
-            circular
-            size="$1"
-            icon={<FontAwesome name="chevron-down" size={10} color="white" />}
-          />
-        </XStack>
+          {post?.description && <Text>{post?.description}</Text>}
+        </YStack>
+
         <YStack space="$3">
           <XStack
             width="100%"

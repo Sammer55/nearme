@@ -24,8 +24,8 @@ import haversineDistance from '@/utils/haversineDistance';
 import openGoogleMapsWithDirections from '@/utils/openDirections';
 
 type Props = {
-  route: {
-    params: {
+  route?: {
+    params?: {
       eventId?: number;
     };
   };

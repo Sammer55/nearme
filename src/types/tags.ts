@@ -9,5 +9,5 @@ export type TagTypes =
   | 'entertainment'
   | 'health'
   | 'groceries'
-  | 'techonology'
+  | 'technology'
   | 'artscrafts';
