@@ -20,8 +20,7 @@
 <img src="https://i.imgur.com/UzGgg5w.png" alt="screenshot 5" width="250"/>
 <img src="https://i.imgur.com/K7ycHOE.png" alt="screenshot 6" width="250"/>
 <img src="https://i.imgur.com/3hK3HrF.png" alt="screenshot 7" width="250"/>
-<img src="https://i.imgur.com/RGlmkNK.png" alt="screenshot 8" width="250"/>
-<img src="https://i.imgur.com/zYbvZBl.png" alt="screenshot 9" width="250"/>
+<img src="https://i.imgur.com/zYbvZBl.png" alt="screenshot 8" width="250"/>
 </div>
 
 ## Videos
