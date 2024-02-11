@@ -3,6 +3,9 @@ import { TamaguiProvider } from 'tamagui';
 import config from './tamagui.config';
 import Root from './src/routes';
 import { StatusBar } from 'expo-status-bar';
+import { LogBox } from 'react-native';
+
+LogBox.ignoreAllLogs();
 
 export default function App() {
   const [loaded] = useFonts({
