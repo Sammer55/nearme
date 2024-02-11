@@ -4,6 +4,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Button, H5, Image, Stack, Text, XStack, YStack } from 'tamagui';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
+import { useToast } from 'react-native-toast-notifications';
 
 type Props = {
   route: {
@@ -17,12 +18,23 @@ const LoginScreen = ({ route }: Props) => {
   const { top, bottom } = useSafeAreaInsets();
   const { control } = useForm();
   const navigation = useNavigation();
+  const toast = useToast();
 
   const accountType = route?.params?.type ?? 'user';
 
-  const signIn = () => navigation.navigate('AuthenticatedScreens');
+  const signIn = () => {
+    toast.show("Welcome again! It's good to have you with us.", {
+      type: 'success',
+    });
+    navigation.navigate('AuthenticatedScreens');
+  };
 
-  const signUp = () => navigation.navigate('SignUp');
+  const signUp = () => {
+    toast.show('Sorry, registration is still under construction...', {
+      type: 'warning',
+    });
+    // navigation.navigate('SignUp');
+  };
 
   const icon = {
     user: <FontAwesome5 name="user-astronaut" size={18} color="white" />,
@@ -46,7 +58,7 @@ const LoginScreen = ({ route }: Props) => {
         borderRadius={120}
         alignSelf="center"
         source={{
-          uri: 'https://placekitten.com/200/300',
+          uri: require('assets/icon.png'),
           width: 120,
           height: 120,
         }}
@@ -56,9 +68,9 @@ const LoginScreen = ({ route }: Props) => {
         <YStack space="$1">
           <XStack space="$2">
             {icon[accountType]}
-            <H5>Lorem ipsum</H5>
+            <H5>Welcome again</H5>
           </XStack>
-          <Text>Lorem ipsum Lorem ipsum.</Text>
+          <Text>Log in to continue exploring.</Text>
         </YStack>
 
         <YStack space="$2">

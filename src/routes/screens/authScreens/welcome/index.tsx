@@ -1,4 +1,4 @@
-import { H6, Image, Stack, Text, YStack } from 'tamagui';
+import { H1, H2, H3, H6, Image, Stack, Text, YStack } from 'tamagui';
 import { LinearGradient } from 'tamagui/linear-gradient';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import AccountType from './accountType';
@@ -31,23 +31,24 @@ const WelcomeScreen = () => {
           <H6 maxWidth="70%" fontSize="$8" textAlign="center">
             Hello! Choose your Account Type
           </H6>
-
-          <Text maxWidth="70%" textAlign="center">
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-            ipsum
-          </Text>
         </YStack>
-        <Stack>
+        <Stack
+          alignItems="center"
+          space
+          pressStyle={{ rotate: '360deg', scale: 1.2 }}
+          enterStyle={{ opacity: 0.5, scale: 0.1, y: 10, x: 10 }}
+          animation="bouncy">
           <Image
             backgroundColor="$blue2Dark"
             borderRadius={200}
             alignSelf="center"
             source={{
-              uri: 'https://placekitten.com/200/300',
+              uri: require('assets/icon.png'),
               width: 200,
               height: 200,
             }}
           />
+          <H3 color="$primary">Nearme</H3>
         </Stack>
 
         <YStack width="100%" space="$3">
@@ -55,7 +56,7 @@ const WelcomeScreen = () => {
             onPress={() => handleNavigate('company')}
             icon={<FontAwesome5 name="store-alt" size={18} color="white" />}
             title="Company"
-            description="Lorem ipsum Lorem ipsum"
+            description="Draw attention to your company"
           />
           <AccountType
             onPress={() => handleNavigate('user')}
@@ -63,7 +64,7 @@ const WelcomeScreen = () => {
               <FontAwesome5 name="user-astronaut" size={20} color="white" />
             }
             title="User"
-            description="Lorem ipsum Lorem ipsum"
+            description="Get to know the area around where you live"
           />
         </YStack>
       </YStack>
