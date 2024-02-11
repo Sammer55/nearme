@@ -4653,13 +4653,6 @@ expo-file-system@~15.4.0, expo-file-system@~15.4.4:
   dependencies:
     uuid "^3.4.0"
 
-expo-font@^11.6.0:
-  version "11.6.0"
-  resolved "https://registry.yarnpkg.com/expo-font/-/expo-font-11.6.0.tgz#7c1c8c82e3b437d54d911808fdf03578763913f3"
-  integrity sha512-ekfU0MN7vzJNGwQCJhxnhF2M9Fq/RtVF5xSQpr8+f4ISPimmKfEcArMHKCl4oG3saFVjSRX7fLbo38WOv3z5Mw==
-  dependencies:
-    fontfaceobserver "^2.1.0"
-
 expo-font@~11.4.0:
   version "11.4.0"
   resolved "https://registry.yarnpkg.com/expo-font/-/expo-font-11.4.0.tgz#e2d31c0bb76ba3c37c2d84703a49aeafc3afef28"
@@ -4671,6 +4664,11 @@ expo-keep-awake@~12.3.0:
   version "12.3.0"
   resolved "https://registry.yarnpkg.com/expo-keep-awake/-/expo-keep-awake-12.3.0.tgz#c42449ae19c993274ddc43aafa618792b6aec408"
   integrity sha512-ujiJg1p9EdCOYS05jh5PtUrfiZnK0yyLy+UewzqrjUqIT8eAGMQbkfOn3C3fHE7AKd5AefSMzJnS3lYZcZYHDw==
+
+expo-linear-gradient@~12.3.0:
+  version "12.3.0"
+  resolved "https://registry.yarnpkg.com/expo-linear-gradient/-/expo-linear-gradient-12.3.0.tgz#7abd8fedbf0138c86805aebbdfbbf5e5fa865f19"
+  integrity sha512-f9e+Oxe5z7fNQarTBZXilMyswlkbYWQHONVfq8MqmiEnW3h9XsxxmVJLG8uVQSQPUsbW+x1UUT/tnU6mkMWeLg==
 
 expo-modules-autolinking@1.5.1:
   version "1.5.1"
@@ -5962,6 +5960,11 @@ loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
+
+lottie-react-native@^6.4.1:
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/lottie-react-native/-/lottie-react-native-6.4.1.tgz#0b3202a0fb914db4f236c4b0658f21b97cb997d7"
+  integrity sha512-DPsUPSxLc3ZffeRQ/AtKtcUl4PzmJEEPt965tNpWSE4vhDkoGFxRe0TPZ45xX8/3HbGsUl48aMdLlAu28MEDsQ==
 
 lru-cache@^5.1.1:
   version "5.1.1"
