@@ -10,6 +10,7 @@ const AuthScreens = () => {
 
   return (
     <Stack.Navigator
+      initialRouteName="Welcome"
       screenOptions={{
         headerShown: false,
         contentStyle: {

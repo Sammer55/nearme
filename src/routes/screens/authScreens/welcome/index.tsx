@@ -53,7 +53,7 @@ const WelcomeScreen = () => {
         <YStack w="100%" space="$3">
           <AccountType
             onPress={() => handleNavigate('company')}
-            icon={<FontAwesome5 name="store" size={18} color="white" />}
+            icon={<FontAwesome5 name="store-alt" size={18} color="white" />}
             title="Company"
             description="Lorem ipsum Lorem ipsum"
           />
