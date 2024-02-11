@@ -28,7 +28,6 @@ const TabsScreens = () => {
       <Tab.Screen name="Feed" component={FeedScreen} />
       <Tab.Screen name="List" component={ListScreen} />
       <Tab.Screen name="Events" component={EventsScreen} />
-      <Tab.Screen name="Profile" component={FeedScreen} />
     </Tab.Navigator>
   );
 };
