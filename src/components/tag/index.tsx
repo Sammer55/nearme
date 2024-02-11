@@ -9,9 +9,7 @@ type Props = {
 const Tag = ({ onSelectTag, item, size = '$3', ...rest }: Props) => {
   const hoverStyle = { scale: 0.97, bg: item.color, opacity: 0.5 };
 
-  const handleSelectTag = () => {
-    !!onSelectTag && onSelectTag(item);
-  };
+  const handleSelectTag = () => !!onSelectTag && onSelectTag(item);
 
   return (
     <Button

@@ -13,7 +13,7 @@ const Event = ({ item }: Props) => {
   const navigation = useNavigation();
 
   const handleNavigateToCompany = () =>
-    navigation.navigate('Company', { companyId: item?.id });
+    navigation.navigate('Event', { eventId: item?.id });
 
   const startDate = formatDistanceToNow(new Date(item.date), {
     addSuffix: true,

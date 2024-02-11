@@ -9,7 +9,6 @@ import {
   Sheet,
   Stack,
   Text,
-  View,
   XStack,
   YStack,
 } from 'tamagui';
@@ -27,6 +26,8 @@ const CompanyScreen = ({ route }) => {
   const [isRating, setIsRating] = useState(false);
   const [rating, setRating] = useState(0);
   const [isFollowing, setIsFollowing] = useState(false);
+
+  const { top } = useSafeAreaInsets();
 
   const companyId = route?.params?.companyId;
   const company = companies.find((item) => item.id === companyId);
@@ -94,7 +95,7 @@ const CompanyScreen = ({ route }) => {
 
   return (
     <ImageBackground source={{ uri: company?.avatar }} style={{ flex: 1 }}>
-      <BlurView intensity={100} style={{ flex: 1 }}>
+      <BlurView intensity={100} style={{ flex: 1, paddingTop: top }}>
         <YStack padding="$3" space="$6">
           <XStack alignItems="center" justifyContent="space-between">
             <Button
@@ -115,6 +116,11 @@ const CompanyScreen = ({ route }) => {
               {company?.name}
             </Text>
             <XStack
+              backgroundColor="$background"
+              paddingHorizontal="$2"
+              borderRadius="$11"
+              borderWidth={1}
+              borderColor="$gray5"
               onPress={() => setIsRating(!isRating)}
               pressStyle={{
                 scale: 1.1,

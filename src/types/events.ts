@@ -1,4 +1,5 @@
 import { CompanyType } from './companies';
+import { TagTypes } from './tags';
 
 export type EventType = {
   id: number;
@@ -7,4 +8,8 @@ export type EventType = {
   owner: CompanyType;
   address: string;
   date: string;
+  latitude: number;
+  longitude: number;
+  tags: TagTypes[];
+  description: string;
 };
