@@ -1,6 +1,6 @@
 import { ScrollView } from 'tamagui';
-import { TagTypes, tags } from '../../../../../types/tags';
-import RenderTag from '../../../../../utils/renderTag';
+import { TagTypes, tags } from '@/types/tags';
+import RenderTag from '@/utils/renderTag';
 
 type Props = {
   onSelectTag: (tag: TagTypes) => void;

@@ -24,7 +24,7 @@ const CustomTabBar = (props: Props) => {
       return (
         <Tabs.Tab
           borderRadius={8}
-          bg={isCurrent ? '$primary' : 'transparent'}
+          backgroundColor={isCurrent ? '$primary' : 'transparent'}
           onPress={() => handleNavigation(page)}
           flex={1}
           value={page}>
@@ -44,7 +44,7 @@ const CustomTabBar = (props: Props) => {
 
   return (
     <Tabs
-      bg="$background"
+      backgroundColor="$background"
       paddingBottom={bottom - 16}
       defaultValue="feed"
       orientation="horizontal"

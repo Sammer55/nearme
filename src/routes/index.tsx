@@ -9,7 +9,7 @@ const Root = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="AuthenticatedScreens"
+        initialRouteName="AuthScreens"
         screenOptions={{
           headerShown: false,
         }}>

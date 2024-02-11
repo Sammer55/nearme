@@ -1,4 +1,4 @@
-import Input from 'components/input';
+import Input from '@/components/input';
 import { useForm } from 'react-hook-form';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Button, H5, Image, Stack, Text, XStack, YStack } from 'tamagui';
@@ -37,12 +37,12 @@ const LoginScreen = ({ route }: Props) => {
         y: -10,
         opacity: 0,
       }}
-      pt={top + 16}
-      pb={bottom + 16}
+      paddingTop={top + 16}
+      paddingBottom={bottom + 16}
       paddingHorizontal="$3"
       space="$8">
       <Image
-        bg="$blue2Dark"
+        backgroundColor="$blue2Dark"
         borderRadius={120}
         alignSelf="center"
         source={{

@@ -2,6 +2,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import FeedScreen from './feed';
 import { useTheme } from 'tamagui';
 import CustomTabBar from './customTabBar';
+import ListScreen from './list';
 
 const Tab = createBottomTabNavigator();
 
@@ -18,7 +19,7 @@ const AuthenticatedScreens = () => {
         },
       }}>
       <Tab.Screen name="Feed" component={FeedScreen} />
-      <Tab.Screen name="List" component={FeedScreen} />
+      <Tab.Screen name="List" component={ListScreen} />
       <Tab.Screen name="Events" component={FeedScreen} />
       <Tab.Screen name="Profile" component={FeedScreen} />
     </Tab.Navigator>

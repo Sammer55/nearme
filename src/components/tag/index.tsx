@@ -19,7 +19,7 @@ const Tag = ({ onSelectTag, item, size = '$3', ...rest }: Props) => {
       pressStyle={hoverStyle}
       width="$10"
       size={size}
-      bg={item.color}>
+      backgroundColor={item.color}>
       {item.label}
     </Button>
   );

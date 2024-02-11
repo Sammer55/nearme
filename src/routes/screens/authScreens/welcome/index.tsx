@@ -15,7 +15,7 @@ const WelcomeScreen = () => {
   return (
     <LinearGradient
       flex={1}
-      pt={top + 16}
+      paddingTop={top + 16}
       colors={['black', '$blue2Dark']}
       start={[1, 1]}
       end={[0, 0.2]}
@@ -24,8 +24,8 @@ const WelcomeScreen = () => {
       <YStack
         justifyContent="space-between"
         flex={1}
-        pb={bottom + 16}
-        w="100%"
+        paddingBottom={bottom + 16}
+        width="100%"
         zIndex={1}>
         <YStack space="$3" alignItems="center">
           <H6 maxWidth="70%" fontSize="$8" textAlign="center">
@@ -39,7 +39,7 @@ const WelcomeScreen = () => {
         </YStack>
         <Stack>
           <Image
-            bg="$blue2Dark"
+            backgroundColor="$blue2Dark"
             borderRadius={200}
             alignSelf="center"
             source={{
@@ -50,7 +50,7 @@ const WelcomeScreen = () => {
           />
         </Stack>
 
-        <YStack w="100%" space="$3">
+        <YStack width="100%" space="$3">
           <AccountType
             onPress={() => handleNavigate('company')}
             icon={<FontAwesome5 name="store-alt" size={18} color="white" />}

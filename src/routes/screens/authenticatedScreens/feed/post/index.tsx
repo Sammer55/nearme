@@ -1,10 +1,10 @@
 import { Avatar, H6, Image, Stack, Text, XStack, YStack } from 'tamagui';
 import { FontAwesome5 } from '@expo/vector-icons';
-import { PostType } from '../../../../../types/posts';
+import { PostType } from '@/types/posts';
 import { formatDistanceToNow } from 'date-fns';
 import { useNavigation } from '@react-navigation/native';
-import RenderTag from '../../../../../utils/renderTag';
-import { TagTypes } from '../../../../../types/tags';
+import RenderTag from '@/utils/renderTag';
+import { TagTypes } from '@/types/tags';
 
 type Props = {
   item: PostType;
@@ -76,8 +76,8 @@ const Post = ({ item }: Props) => {
           <Image
             borderRadius="$4"
             source={{ uri: item?.image }}
-            w="100%"
-            h={300}
+            width="100%"
+            height={300}
           />
         </Stack>
       )}
