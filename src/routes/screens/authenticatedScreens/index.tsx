@@ -9,6 +9,7 @@ import CompanyScreen from './screens/company';
 import PostScreen from './screens/post';
 import MapsScreen from './screens/maps';
 import EventScreen from './screens/event';
+import AlertsScreen from './screens/alerts';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -44,6 +45,7 @@ const AuthenticatedScreens = () => {
       <Stack.Screen name="Post" component={PostScreen} />
       <Stack.Screen name="Maps" component={MapsScreen} />
       <Stack.Screen name="Event" component={EventScreen} />
+      <Stack.Screen name="Alerts" component={AlertsScreen} />
     </Stack.Navigator>
   );
 };
