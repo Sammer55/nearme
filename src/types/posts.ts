@@ -1,3 +1,4 @@
+import { CompanyType } from './companies';
 import { TagTypes } from './tags';
 
 export type PostOwnerType = {
@@ -9,7 +10,7 @@ export type PostOwnerType = {
 
 export type PostType = {
   id: number;
-  owner: PostOwnerType;
+  owner: CompanyType;
   created_at: string;
   like_count: number;
   comment_count: number;

@@ -5,7 +5,7 @@ const EmptyState = () => {
   return (
     <YStack
       enterStyle={{
-        scale: 1.1,
+        scale: 1.2,
         x: 100,
         opacity: 0,
       }}

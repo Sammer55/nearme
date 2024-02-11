@@ -11,16 +11,3 @@ export type TagTypes =
   | 'groceries'
   | 'techonology'
   | 'artscrafts';
-
-export const tags: TagTypes[] = [
-  'all',
-  'gastronomy',
-  'fashion',
-  'beauty',
-  'services',
-  'entertainment',
-  'health',
-  'groceries',
-  'techonology',
-  'artscrafts',
-];

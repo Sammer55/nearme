@@ -6,36 +6,32 @@ import { FlatList } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { H3, Stack, YStack } from 'tamagui';
 import { LinearGradient } from 'tamagui/linear-gradient';
-import Company from './company';
+import Company from './event';
 import { useMemo } from 'react';
+import { events } from '@/db/events';
+import { EventType } from '@/types/events';
 import EmptyState from '@/components/emptyState';
 
-const ListScreen = () => {
+const EventsScreen = () => {
   const { top } = useSafeAreaInsets();
 
   const { control, watch } = useForm();
 
   const search = watch('search');
 
-  const renderItem = ({ item }: { item: CompanyType }) => (
-    <Company item={item} />
-  );
+  const renderItem = ({ item }: { item: EventType }) => <Company item={item} />;
 
   const filteredCompanies = useMemo(() => {
-    return companies.filter((item: CompanyType) => {
+    return events.filter((item: EventType) => {
       if (!search) return true;
 
       const searchLowerCase = search.toLowerCase();
-      const tags = item.tags.map((tag) => tag.toLowerCase());
       const address = item.address.toLowerCase();
       const name = item.name.toLowerCase();
 
       const filterByAddress = address.includes(searchLowerCase);
       const filterByName = name.includes(searchLowerCase);
-      const filterByCategory = tags.some((tag) =>
-        tag.includes(searchLowerCase),
-      );
-      const occurrences = filterByAddress || filterByName || filterByCategory;
+      const occurrences = filterByAddress || filterByName;
 
       return occurrences;
     });
@@ -45,17 +41,17 @@ const ListScreen = () => {
     <LinearGradient
       flex={1}
       paddingTop={top + 16}
-      colors={['$green1', 'black']}
+      colors={['$purple1', 'black']}
       start={[1, 1]}
       end={[0, 0.2]}
       position="relative">
       <YStack space="$2" flex={1}>
         <YStack paddingHorizontal="$3" space="$2">
-          <H3>Find something you need</H3>
+          <H3>Let's go to an event!</H3>
           <Input
             name="search"
             control={control}
-            placeholder="Search by name, category or address"
+            placeholder="Search by name, company, address or ..."
           />
         </YStack>
         <Stack paddingHorizontal="$3" flex={1}>
@@ -73,4 +69,4 @@ const ListScreen = () => {
   );
 };
 
-export default ListScreen;
+export default EventsScreen;
