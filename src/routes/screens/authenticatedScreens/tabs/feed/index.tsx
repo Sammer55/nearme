@@ -33,8 +33,8 @@ const FeedScreen = () => {
         <YStack paddingHorizontal="$3" space="$1">
           <H3>Explore</H3>
           <Text fontSize="$5">
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum{' '}
-            <Text fontWeight="bold">Lorem ipsum</Text>.
+            Connect and Support Local Businesses{' '}
+            <Text fontWeight="bold">Near you</Text>.
           </Text>
         </YStack>
         <Tags onSelectTag={onSelectTag} />

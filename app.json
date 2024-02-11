@@ -9,6 +9,15 @@
     "experiments": {
       "tsconfigPaths": true
     },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#ffffff"
+        }
+      ]
+    ],
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -26,6 +35,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "021cbad3-b30a-4d7b-b7d7-d8387148f9b0"
+      }
     }
   }
 }

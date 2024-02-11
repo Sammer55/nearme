@@ -41,6 +41,7 @@ const Company = ({ item }: Props) => {
             width={80}
             height={80}
             borderRadius="$3"
+            backgroundColor="$backgroundFocus"
           />
           <YStack space="$2" flex={1}>
             <YStack>
