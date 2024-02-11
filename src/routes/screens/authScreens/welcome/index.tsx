@@ -19,9 +19,9 @@ const WelcomeScreen = () => {
       colors={['black', '$blue2Dark']}
       start={[1, 1]}
       end={[0, 0.2]}
-      paddingHorizontal="$3"
       position="relative">
       <YStack
+        paddingHorizontal="$3"
         justifyContent="space-between"
         flex={1}
         paddingBottom={bottom + 16}

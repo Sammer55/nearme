@@ -21,7 +21,7 @@ const RenderTag = memo(({ tag, onSelectTag, hideLabel, ...rest }: Props) => {
     entertainment: { label: 'Entertainment', color: theme.orange10 },
     health: { label: 'Health', color: theme.green10 },
     groceries: { label: 'Groceries', color: theme.red8 },
-    techonology: { label: 'Technology', color: theme.blue8 },
+    technology: { label: 'Technology', color: theme.blue8 },
     artscrafts: { label: 'ArtsCrafts', color: theme.green8 },
   };
 

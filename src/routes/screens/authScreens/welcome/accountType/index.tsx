@@ -30,7 +30,7 @@ const AccountType = ({ title, description, icon, onPress }: Props) => {
       borderWidth={1}
       borderColor="$gray7">
       <LinearGradient
-        colors={['$primary', '$purple8']}
+        colors={['$primary', '$green10']}
         start={[0, 0.5]}
         end={[0.5, 0]}
         borderRadius="$8"

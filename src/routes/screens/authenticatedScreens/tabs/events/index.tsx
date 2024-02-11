@@ -28,10 +28,13 @@ const EventsScreen = () => {
       const searchLowerCase = search.toLowerCase();
       const address = item.address.toLowerCase();
       const name = item.name.toLowerCase();
+      const companyName = item.owner.name;
 
       const filterByAddress = address.includes(searchLowerCase);
       const filterByName = name.includes(searchLowerCase);
-      const occurrences = filterByAddress || filterByName;
+      const filterByCompanyName = companyName.includes(searchLowerCase);
+      const occurrences =
+        filterByAddress || filterByName || filterByCompanyName;
 
       return occurrences;
     });

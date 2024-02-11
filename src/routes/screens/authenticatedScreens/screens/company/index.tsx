@@ -27,8 +27,8 @@ import { useToast } from 'react-native-toast-notifications';
 import { ScheduleType } from '@/types/companies';
 
 type Props = {
-  route: {
-    params: {
+  route?: {
+    params?: {
       companyId?: number;
     };
   };

@@ -8,7 +8,7 @@ import { FontAwesome5 } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 
 const AlertsScreen = () => {
-  const { top } = useSafeAreaInsets();
+  const { top, bottom } = useSafeAreaInsets();
 
   const navigation = useNavigation();
 
@@ -19,6 +19,7 @@ const AlertsScreen = () => {
       backgroundColor="$background"
       flex={1}
       paddingTop={top}
+      paddingBottom={bottom}
       paddingHorizontal="$3"
       space="$3">
       <XStack justifyContent="space-between" alignItems="center">
@@ -35,6 +36,7 @@ const AlertsScreen = () => {
       </XStack>
 
       <FlatList
+        showsVerticalScrollIndicator={false}
         data={alerts}
         keyExtractor={(item) => item.id.toString()}
         renderItem={renderItem}

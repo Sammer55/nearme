@@ -9,6 +9,6 @@ export const tags: TagTypes[] = [
   'entertainment',
   'health',
   'groceries',
-  'techonology',
+  'technology',
   'artscrafts',
 ];

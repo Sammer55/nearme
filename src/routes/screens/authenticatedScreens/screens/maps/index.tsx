@@ -24,8 +24,8 @@ import { useLocation } from '@/context/location';
 import openGoogleMapsWithDirections from '@/utils/openDirections';
 
 type Props = {
-  route: {
-    params: {
+  route?: {
+    params?: {
       initialRegion?: {
         latitude?: number;
         longitude?: number;
