@@ -8,6 +8,7 @@ import { LogBox } from 'react-native';
 import * as Notifications from 'expo-notifications';
 import { useEffect } from 'react';
 import registerForPushNotificationsAsync from './src/utils/registerForPushNotificationsAsync';
+import { LocationProvider } from './src/context/location';
 
 LogBox.ignoreAllLogs();
 
@@ -34,7 +35,9 @@ export default function App() {
   return (
     <TamaguiProvider config={config}>
       <StatusBar style="light" />
-      <Root />
+      <LocationProvider>
+        <Root />
+      </LocationProvider>
     </TamaguiProvider>
   );
 }

@@ -9,6 +9,7 @@ import { LinearGradient } from 'tamagui/linear-gradient';
 import Company from './company';
 import { useMemo } from 'react';
 import EmptyState from '@/components/emptyState';
+import ExploreOnMaps from '@/components/exploreOnMaps';
 
 const ListScreen = () => {
   const { top } = useSafeAreaInsets();
@@ -57,6 +58,7 @@ const ListScreen = () => {
             control={control}
             placeholder="Search by name, category or address"
           />
+          <ExploreOnMaps description="Try to find some shops in your region." />
         </YStack>
         <Stack paddingHorizontal="$3" flex={1}>
           <FlatList

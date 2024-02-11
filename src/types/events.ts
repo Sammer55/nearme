@@ -12,4 +12,6 @@ export type EventType = {
   longitude: number;
   tags: TagTypes[];
   description: string;
+  views: number;
+  checks: number;
 };

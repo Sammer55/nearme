@@ -18,15 +18,23 @@ import { useNavigation } from '@react-navigation/native';
 import RenderTag from '@/utils/renderTag';
 import { useState } from 'react';
 import schedulePushNotification from '@/utils/pushLocalNotification';
+import { formatDistanceToNow } from 'date-fns';
+
+type DetailsItemProps = {
+  icon: React.ReactNode;
+  text?: string | number;
+  onPress?: () => void;
+};
 
 const EventScreen = ({ route }) => {
   const [isChecked, setIsChecked] = useState(false);
 
   const eventId = route?.params?.eventId;
+  const event = events.find((item) => item.id === eventId);
+
+  const [checks, setChecks] = useState(event?.checks || 0);
 
   const { top, bottom } = useSafeAreaInsets();
-
-  const event = events.find((item) => item.id === eventId);
 
   const navigation = useNavigation();
 
@@ -39,7 +47,45 @@ const EventScreen = ({ route }) => {
       });
     }
 
+    setChecks(isChecked ? checks - 1 : checks + 1);
+
     setIsChecked(!isChecked);
+  };
+
+  const handleOpenMaps = () =>
+    navigation.navigate('Maps', {
+      initialRegion: {
+        latitude: event?.latitude,
+        longitude: event?.longitude,
+      },
+    });
+
+  const startDate =
+    event &&
+    formatDistanceToNow(new Date(event?.date), {
+      addSuffix: true,
+    });
+
+  const DetailsItem = ({ icon, text, onPress }: DetailsItemProps) => {
+    const isPressable = !!onPress;
+
+    const handlePress = () => isPressable && onPress();
+
+    return (
+      <YStack
+        onPress={handlePress}
+        pressStyle={isPressable ? { opacity: 0.5, y: -1 } : null}
+        animation="bouncy"
+        alignItems="center"
+        space="$2"
+        paddingVertical="$2"
+        paddingHorizontal="$3"
+        borderRadius="$1"
+        backgroundColor="$backgroundPress">
+        {icon}
+        <H6 fontSize="$2">{text}</H6>
+      </YStack>
+    );
   };
 
   return (
@@ -56,7 +102,10 @@ const EventScreen = ({ route }) => {
           position="relative"
           justifyContent="space-between">
           <ScrollView showsVerticalScrollIndicator={false} flex={1}>
-            <XStack height="50%">
+            <XStack
+              height="50%"
+              justifyContent="space-between"
+              alignItems="flex-start">
               <Button
                 onPress={() => navigation.goBack()}
                 circular
@@ -64,6 +113,15 @@ const EventScreen = ({ route }) => {
                   <FontAwesome5 name="chevron-left" size={16} color="white" />
                 }
               />
+              <XStack
+                backgroundColor="$primary"
+                paddingVertical="$2"
+                paddingHorizontal="$3"
+                space="$2"
+                borderRadius="$10">
+                <FontAwesome name="calendar-o" size={16} color="white" />
+                <Text>{startDate}</Text>
+              </XStack>
             </XStack>
             <YStack space>
               <XStack space="$2">
@@ -113,6 +171,36 @@ const EventScreen = ({ route }) => {
               </XStack>
 
               {event?.tags.map((item) => <RenderTag tag={item} />)}
+
+              <XStack
+                backgroundColor="$background"
+                space
+                padding="$2"
+                borderRadius="$2">
+                <DetailsItem
+                  icon={
+                    <FontAwesome
+                      name="calendar-check-o"
+                      size={16}
+                      color="white"
+                    />
+                  }
+                  text={checks}
+                />
+
+                <DetailsItem
+                  icon={<FontAwesome name="eye" size={16} color="white" />}
+                  text={event?.views}
+                />
+
+                <DetailsItem
+                  icon={
+                    <FontAwesome name="map-marker" size={16} color="white" />
+                  }
+                  text="Maps"
+                  onPress={handleOpenMaps}
+                />
+              </XStack>
 
               <Text lineHeight={20} letterSpacing={0.5}>
                 {event?.description}
