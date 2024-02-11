@@ -1,4 +1,4 @@
-import { Text } from "tamagui";
+import { Text } from 'tamagui';
 
 const LoginScreen = () => {
   return <Text>LoginScreen</Text>;

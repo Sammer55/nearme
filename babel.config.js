@@ -1,25 +1,25 @@
 module.exports = function (api) {
   api.cache(true);
   return {
-    presets: ["babel-preset-expo"],
+    presets: ['babel-preset-expo'],
     plugins: [
-      "transform-inline-environment-variables",
+      'transform-inline-environment-variables',
       [
-        "@tamagui/babel-plugin",
+        '@tamagui/babel-plugin',
         {
-          components: ["tamagui"],
-          config: "./tamagui.config.ts",
+          components: ['tamagui'],
+          config: './tamagui.config.ts',
           logTimings: true,
         },
       ],
-      "react-native-reanimated/plugin",
+      'react-native-reanimated/plugin',
       [
-        "module-resolver",
+        'module-resolver',
         {
-          root: ["./src"],
+          root: ['./src'],
           alias: {
-            components: "./src/components",
-            screens: "./src/routes/screens",
+            components: './src/components',
+            screens: './src/routes/screens',
           },
         },
       ],

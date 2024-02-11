@@ -1,5 +1,5 @@
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import LoginScreen from "./login";
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import LoginScreen from './login';
 
 const Tab = createBottomTabNavigator();
 
