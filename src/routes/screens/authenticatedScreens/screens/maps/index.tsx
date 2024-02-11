@@ -23,7 +23,18 @@ import { StatusBar } from 'expo-status-bar';
 import { useLocation } from '@/context/location';
 import openGoogleMapsWithDirections from '@/utils/openDirections';
 
-const MapsScreen = ({ route }) => {
+type Props = {
+  route: {
+    params: {
+      initialRegion?: {
+        latitude?: number;
+        longitude?: number;
+      };
+    };
+  };
+};
+
+const MapsScreen = ({ route }: Props) => {
   const [selectedTag, setSelectedTag] = useState<TagTypes | null>();
 
   const { top } = useSafeAreaInsets();
@@ -44,8 +55,8 @@ const MapsScreen = ({ route }) => {
     if (type === 'event') return navigation.navigate('Event', { eventId: id });
   };
 
-  const latitude = initialRegion?.latitude ?? location?.coords.latitude;
-  const longitude = initialRegion?.longitude ?? location?.coords.longitude;
+  const latitude = initialRegion?.latitude ?? location?.coords.latitude ?? 0;
+  const longitude = initialRegion?.longitude ?? location?.coords.longitude ?? 0;
 
   const companiesArray = companies.map((item) => ({
     ...item,
@@ -133,7 +144,7 @@ const MapsScreen = ({ route }) => {
                 latitude,
                 longitude,
               }}
-              onPress={() => handleOpenMarker(id, type)}>
+              onPress={() => handleOpenMarker(id, type as 'company' | 'event')}>
               <Image
                 borderWidth={2}
                 borderColor={type === 'company' ? '$gray1' : '$orange11'}

@@ -7,8 +7,8 @@ import { useNavigation } from '@react-navigation/native';
 import { useToast } from 'react-native-toast-notifications';
 
 type Props = {
-  route: {
-    params: {
+  route?: {
+    params?: {
       type: 'user' | 'company';
     };
   };
