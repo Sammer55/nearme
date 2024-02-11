@@ -7,4 +7,6 @@ export type CompanyType = {
   address: string;
   rate: number;
   tags: TagTypes[];
+  latitude: number;
+  longitude: number;
 };

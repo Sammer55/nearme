@@ -24,7 +24,7 @@ import { useForm } from 'react-hook-form';
 const PostScreen = ({ route }) => {
   const [isFollowing, setIsFollowing] = useState(false);
 
-  const { bottom } = useSafeAreaInsets();
+  const { bottom, top } = useSafeAreaInsets();
   const theme = useTheme();
   const navigation = useNavigation();
   const { control, watch } = useForm();
@@ -52,13 +52,20 @@ const PostScreen = ({ route }) => {
     setIsFollowing(!isFollowing);
   };
 
+  const handleNavigateToMaps = () => {
+    const latitude = post?.owner?.latitude;
+    const longitude = post?.owner?.longitude;
+
+    navigation.navigate('Maps', { initialRegion: { latitude, longitude } });
+  };
+
   return (
     <ImageBackground
       style={{ flex: 1, backgroundColor: theme.background.get() }}
       source={{ uri: post?.image }}>
       <LinearGradient
         paddingHorizontal="$3"
-        paddingTop="$3"
+        paddingTop={top}
         paddingBottom={bottom}
         colors={['transparent', 'black']}
         start={[0.2, 0.3]}
@@ -88,7 +95,6 @@ const PostScreen = ({ route }) => {
                   <H6
                     pressStyle={{
                       opacity: 0.5,
-                      x: 2,
                     }}
                     animation="bouncy"
                     color={isFollowing ? '$red11' : '$green11'}
@@ -122,7 +128,7 @@ const PostScreen = ({ route }) => {
               }}
               animation="bouncy">
               <YStack
-                enterStyle={{
+                pressStyle={{
                   opacity: 0.5,
                 }}
                 animation="bouncy"
@@ -132,7 +138,7 @@ const PostScreen = ({ route }) => {
                 <Text fontWeight="bold">{post?.like_count}</Text>
               </YStack>
               <YStack
-                enterStyle={{
+                pressStyle={{
                   opacity: 0.5,
                 }}
                 animation="bouncy"
@@ -141,6 +147,20 @@ const PostScreen = ({ route }) => {
                 <FontAwesome5 name="comment" size={24} color="white" />
                 <Text fontWeight="bold">{post?.comment_count}</Text>
               </YStack>
+              <Button
+                pressStyle={{
+                  opacity: 0.5,
+                  backgroundColor: '$green7',
+                }}
+                onPress={handleNavigateToMaps}
+                backgroundColor="$green8"
+                animation="bouncy"
+                alignItems="center"
+                circular
+                icon={
+                  <FontAwesome5 name="map-marker-alt" size={16} color="white" />
+                }
+              />
             </YStack>
           </XStack>
           <Stack justifyContent="center">
