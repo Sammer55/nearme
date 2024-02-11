@@ -6,9 +6,10 @@ import { memo } from 'react';
 type Props = {
   tag: TagTypes;
   onSelectTag?: () => void;
+  hideLabel?: boolean;
 } & ButtonProps;
 
-const RenderTag = memo(({ tag, onSelectTag, ...rest }: Props) => {
+const RenderTag = memo(({ tag, onSelectTag, hideLabel, ...rest }: Props) => {
   const theme = useTheme();
 
   const tagTypes = {
@@ -24,7 +25,14 @@ const RenderTag = memo(({ tag, onSelectTag, ...rest }: Props) => {
     artscrafts: { label: 'ArtsCrafts', color: theme.green8 },
   };
 
-  return <Tag {...rest} item={tagTypes[tag]} onSelectTag={onSelectTag} />;
+  return (
+    <Tag
+      hideLabel={hideLabel}
+      {...rest}
+      item={tagTypes[tag]}
+      onSelectTag={onSelectTag}
+    />
+  );
 });
 
 export default RenderTag;

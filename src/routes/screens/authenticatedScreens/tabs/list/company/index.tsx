@@ -1,9 +1,11 @@
 import { CompanyType } from '@/types/companies';
 import RenderTag from '@/utils/renderTag';
-import { Card, H6, Image, Text, XStack, YStack } from 'tamagui';
+import { Card, H6, Image, Stack, Text, XStack, YStack } from 'tamagui';
 import { LinearGradient } from 'tamagui/linear-gradient';
 import { FontAwesome } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
+import haversineDistance from '@/utils/haversineDistance';
+import { useLocation } from '@/context/location';
 
 type Props = {
   item: CompanyType;
@@ -14,6 +16,17 @@ const Company = ({ item }: Props) => {
 
   const handleNavigateToCompany = () =>
     navigation.navigate('Company', { companyId: item?.id });
+
+  const { location } = useLocation();
+
+  const distance = !!location
+    ? haversineDistance({
+        userLatitude: location?.coords?.latitude,
+        userLongitude: location?.coords?.longitude,
+        destinyLatitude: item?.latitude,
+        destinyLongitude: item?.longitude,
+      })
+    : '0';
 
   return (
     <Card
@@ -57,7 +70,17 @@ const Company = ({ item }: Props) => {
                 <Text fontSize="$2">{item?.address}</Text>
               </XStack>
             </YStack>
-            {item?.tags?.map((item) => <RenderTag size="$2" tag={item} />)}
+            <XStack justifyContent="space-between">
+              {item?.tags?.map((item) => <RenderTag size="$2" tag={item} />)}
+              <Stack
+                backgroundColor="$background"
+                borderRadius="$1"
+                paddingHorizontal="$2"
+                alignItems="center"
+                justifyContent="center">
+                <Text>{distance}</Text>
+              </Stack>
+            </XStack>
           </YStack>
         </XStack>
       </LinearGradient>

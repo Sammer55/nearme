@@ -153,7 +153,7 @@ const PostScreen = ({ route }) => {
                   backgroundColor: '$green7',
                 }}
                 onPress={handleNavigateToMaps}
-                backgroundColor="$green8"
+                backgroundColor="$green9"
                 animation="bouncy"
                 alignItems="center"
                 circular
