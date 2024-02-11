@@ -1,3 +1,5 @@
+import { TagTypes } from './tags';
+
 export type PostOwnerType = {
   avatar: string;
   name: string;
@@ -13,5 +15,5 @@ export type PostType = {
   comment_count: number;
   description: string | null;
   image: string;
-  tags: string[];
+  tags: TagTypes[];
 };

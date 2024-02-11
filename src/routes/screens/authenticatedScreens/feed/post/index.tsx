@@ -1,9 +1,10 @@
 import { Avatar, H6, Image, Stack, Text, XStack, YStack } from 'tamagui';
-import { FontAwesome5, FontAwesome } from '@expo/vector-icons';
+import { FontAwesome5 } from '@expo/vector-icons';
 import { PostType } from '../../../../../types/posts';
 import { formatDistanceToNow } from 'date-fns';
 import { useNavigation } from '@react-navigation/native';
-import Tag from '../../../../../components/tag';
+import RenderTag from '../../../../../utils/renderTag';
+import { TagTypes } from '../../../../../types/tags';
 
 type Props = {
   item: PostType;
@@ -21,12 +22,8 @@ const Post = ({ item }: Props) => {
 
   const Tags = () => {
     if (item?.tags.length <= 0) return;
-    return item?.tags?.map((item: string) => (
-      <Tag
-        size="$2"
-        item={{ label: item, color: '$gray1' }}
-        onSelectTag={() => {}}
-      />
+    return item?.tags?.map((item: TagTypes) => (
+      <RenderTag tag={item} onSelectTag={() => {}} size="$2" />
     ));
   };
 
