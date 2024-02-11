@@ -1178,6 +1178,25 @@
     "@babel/helper-validator-identifier" "^7.22.20"
     to-fast-properties "^2.0.0"
 
+"@egjs/hammerjs@^2.0.17":
+  version "2.0.17"
+  resolved "https://registry.yarnpkg.com/@egjs/hammerjs/-/hammerjs-2.0.17.tgz#5dc02af75a6a06e4c2db0202cae38c9263895124"
+  integrity sha512-XQsZgjm2EcVUiZQf11UBJQfmZeEmOW8DpI1gsFeln6w0ae0ii4dMQEQ0kjl6DspdWX1aGY1/loyXnP0JS06e/A==
+  dependencies:
+    "@types/hammerjs" "^2.0.36"
+
+"@emotion/is-prop-valid@^0.8.2":
+  version "0.8.8"
+  resolved "https://registry.yarnpkg.com/@emotion/is-prop-valid/-/is-prop-valid-0.8.8.tgz#db28b1c4368a259b60a97311d6a952d4fd01ac1a"
+  integrity sha512-u5WtneEAr5IDG2Wv65yhunPSMLIpuKsbuOktRojfrEiEvRyC85LgPMZI63cr7NUqT8ZIGdSVg8ZKGxIug4lXcA==
+  dependencies:
+    "@emotion/memoize" "0.7.4"
+
+"@emotion/memoize@0.7.4":
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.7.4.tgz#19bf0f5af19149111c40d98bb0cf82119f5d9eeb"
+  integrity sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==
+
 "@esbuild/android-arm64@0.19.6":
   version "0.19.6"
   resolved "https://registry.yarnpkg.com/@esbuild/android-arm64/-/android-arm64-0.19.6.tgz#13d98a34bbbde4237867cc232307a20ded139b6f"
@@ -1609,6 +1628,49 @@
     find-up "^5.0.0"
     js-yaml "^4.1.0"
 
+"@floating-ui/core@^1.3.0", "@floating-ui/core@^1.4.2":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-1.5.0.tgz#5c05c60d5ae2d05101c3021c1a2a350ddc027f8c"
+  integrity sha512-kK1h4m36DQ0UHGj5Ah4db7R0rHemTqqO0QLvUqi1/mUUp3LuAWbWxdxSIf/XsnH9VS6rRVPLJCncjRzUvyCLXg==
+  dependencies:
+    "@floating-ui/utils" "^0.1.3"
+
+"@floating-ui/dom@^1.5.1":
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/@floating-ui/dom/-/dom-1.5.3.tgz#54e50efcb432c06c23cd33de2b575102005436fa"
+  integrity sha512-ClAbQnEqJAKCJOEbbLo5IUlZHkNszqhuxS4fHAVxRPXPya6Ysf2G8KypnYcOTpx6I8xcgF9bbHb6g/2KpbV8qA==
+  dependencies:
+    "@floating-ui/core" "^1.4.2"
+    "@floating-ui/utils" "^0.1.3"
+
+"@floating-ui/react-dom@^2.0.1":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@floating-ui/react-dom/-/react-dom-2.0.4.tgz#b076fafbdfeb881e1d86ae748b7ff95150e9f3ec"
+  integrity sha512-CF8k2rgKeh/49UrnIBs4BdxPUV6vize/Db1d/YbCLyp9GiVZ0BEwf5AiDSxJRCr6yOkGqTFHtmrULxkEfYZ7dQ==
+  dependencies:
+    "@floating-ui/dom" "^1.5.1"
+
+"@floating-ui/react-native@^0.10.1":
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/@floating-ui/react-native/-/react-native-0.10.1.tgz#6306e192c6b755fb5a8d037a089c2f9f619dd15a"
+  integrity sha512-+GdYTrcZ9pD6+l63YU8hqCDZGsUeP4351kLY6dgjXUDYXYCr7M0rWnTWigVMOyafnDrTRXWxZxJbHo180+uFvQ==
+  dependencies:
+    "@floating-ui/core" "^1.3.0"
+
+"@floating-ui/react@^0.24.7":
+  version "0.24.8"
+  resolved "https://registry.yarnpkg.com/@floating-ui/react/-/react-0.24.8.tgz#e079e2836990be3fce9665ab509360a5447251a1"
+  integrity sha512-AuYeDoaR8jtUlUXtZ1IJ/6jtBkGnSpJXbGNzokBL87VDJ8opMq1Bgrc0szhK482ReQY6KZsMoZCVSb4xwalkBA==
+  dependencies:
+    "@floating-ui/react-dom" "^2.0.1"
+    aria-hidden "^1.2.3"
+    tabbable "^6.0.1"
+
+"@floating-ui/utils@^0.1.3":
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/@floating-ui/utils/-/utils-0.1.6.tgz#22958c042e10b67463997bd6ea7115fe28cbcaf9"
+  integrity sha512-OfX7E2oUDYxtBvsuS4e/jSn4Q9Qb6DzgeYtsAdkPZ47znpoNsMgZw0+tVijiv3uGNR6dgNlty6r9rzIzHjtd/A==
+
 "@gar/promisify@^1.0.1":
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.3.tgz#555193ab2e3bb3b6adc3d551c9c030d9e860daf6"
@@ -1740,6 +1802,59 @@
   dependencies:
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
+
+"@motionone/animation@^10.12.0":
+  version "10.16.3"
+  resolved "https://registry.yarnpkg.com/@motionone/animation/-/animation-10.16.3.tgz#f5b71e27fd8b88b61f983adb0ed6c8e3e89281f9"
+  integrity sha512-QUGWpLbMFLhyqKlngjZhjtxM8IqiJQjLK0DF+XOF6od9nhSvlaeEpOY/UMCRVcZn/9Tr2rZO22EkuCIjYdI74g==
+  dependencies:
+    "@motionone/easing" "^10.16.3"
+    "@motionone/types" "^10.16.3"
+    "@motionone/utils" "^10.16.3"
+    tslib "^2.3.1"
+
+"@motionone/dom@10.12.0":
+  version "10.12.0"
+  resolved "https://registry.yarnpkg.com/@motionone/dom/-/dom-10.12.0.tgz#ae30827fd53219efca4e1150a5ff2165c28351ed"
+  integrity sha512-UdPTtLMAktHiqV0atOczNYyDd/d8Cf5fFsd1tua03PqTwwCe/6lwhLSQ8a7TbnQ5SN0gm44N1slBfj+ORIhrqw==
+  dependencies:
+    "@motionone/animation" "^10.12.0"
+    "@motionone/generators" "^10.12.0"
+    "@motionone/types" "^10.12.0"
+    "@motionone/utils" "^10.12.0"
+    hey-listen "^1.0.8"
+    tslib "^2.3.1"
+
+"@motionone/easing@^10.16.3":
+  version "10.16.3"
+  resolved "https://registry.yarnpkg.com/@motionone/easing/-/easing-10.16.3.tgz#a62abe0ba2841861f167f286782e287eab8d7466"
+  integrity sha512-HWTMZbTmZojzwEuKT/xCdvoMPXjYSyQvuVM6jmM0yoGU6BWzsmYMeB4bn38UFf618fJCNtP9XeC/zxtKWfbr0w==
+  dependencies:
+    "@motionone/utils" "^10.16.3"
+    tslib "^2.3.1"
+
+"@motionone/generators@^10.12.0":
+  version "10.16.4"
+  resolved "https://registry.yarnpkg.com/@motionone/generators/-/generators-10.16.4.tgz#4a38708244bce733bfcebd4a26d19f4bbabd36af"
+  integrity sha512-geFZ3w0Rm0ZXXpctWsSf3REGywmLLujEjxPYpBR0j+ymYwof0xbV6S5kGqqsDKgyWKVWpUInqQYvQfL6fRbXeg==
+  dependencies:
+    "@motionone/types" "^10.16.3"
+    "@motionone/utils" "^10.16.3"
+    tslib "^2.3.1"
+
+"@motionone/types@^10.12.0", "@motionone/types@^10.16.3":
+  version "10.16.3"
+  resolved "https://registry.yarnpkg.com/@motionone/types/-/types-10.16.3.tgz#9284ea8a52f6b32c51c54b617214f20e43ac6c59"
+  integrity sha512-W4jkEGFifDq73DlaZs3HUfamV2t1wM35zN/zX7Q79LfZ2sc6C0R1baUHZmqc/K5F3vSw3PavgQ6HyHLd/MXcWg==
+
+"@motionone/utils@^10.12.0", "@motionone/utils@^10.16.3":
+  version "10.16.3"
+  resolved "https://registry.yarnpkg.com/@motionone/utils/-/utils-10.16.3.tgz#ddf07ab6cf3000d89e3bcbdc9a8c3e1fd64f8520"
+  integrity sha512-WNWDksJIxQkaI9p9Z9z0+K27xdqISGNFy1SsWVGaiedTHq0iaT6iZujby8fT/ZnZxj1EOaxJtSfUPCFNU5CRoA==
+  dependencies:
+    "@motionone/types" "^10.16.3"
+    hey-listen "^1.0.8"
+    tslib "^2.3.1"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -1990,6 +2105,57 @@
     invariant "^2.2.4"
     nullthrows "^1.1.1"
 
+"@react-navigation/bottom-tabs@^6.5.11":
+  version "6.5.11"
+  resolved "https://registry.yarnpkg.com/@react-navigation/bottom-tabs/-/bottom-tabs-6.5.11.tgz#b6e67a3aa19e60ed9c1139fa0253586c479832d5"
+  integrity sha512-CBN/NOdxnMvmjw+AJQI1kltOYaClTZmGec5pQ3ZNTPX86ytbIOylDIITKMfTgHZcIEFQDymx1SHeS++PIL3Szw==
+  dependencies:
+    "@react-navigation/elements" "^1.3.21"
+    color "^4.2.3"
+    warn-once "^0.1.0"
+
+"@react-navigation/core@^6.4.10":
+  version "6.4.10"
+  resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-6.4.10.tgz#0c52621968b35e3a75e189e823d3b9e3bad77aff"
+  integrity sha512-oYhqxETRHNHKsipm/BtGL0LI43Hs2VSFoWMbBdHK9OqgQPjTVUitslgLcPpo4zApCcmBWoOLX2qPxhsBda644A==
+  dependencies:
+    "@react-navigation/routers" "^6.1.9"
+    escape-string-regexp "^4.0.0"
+    nanoid "^3.1.23"
+    query-string "^7.1.3"
+    react-is "^16.13.0"
+    use-latest-callback "^0.1.7"
+
+"@react-navigation/elements@^1.3.21":
+  version "1.3.21"
+  resolved "https://registry.yarnpkg.com/@react-navigation/elements/-/elements-1.3.21.tgz#debac6becc6b6692da09ec30e705e476a780dfe1"
+  integrity sha512-eyS2C6McNR8ihUoYfc166O1D8VYVh9KIl0UQPI8/ZJVsStlfSTgeEEh+WXge6+7SFPnZ4ewzEJdSAHH+jzcEfg==
+
+"@react-navigation/native-stack@^6.9.17":
+  version "6.9.17"
+  resolved "https://registry.yarnpkg.com/@react-navigation/native-stack/-/native-stack-6.9.17.tgz#4fc370b14be07296423ae8c00940fb002c6001b5"
+  integrity sha512-X8p8aS7JptQq7uZZNFEvfEcPf6tlK4PyVwYDdryRbG98B4bh2wFQYMThxvqa+FGEN7USEuHdv2mF0GhFKfX0ew==
+  dependencies:
+    "@react-navigation/elements" "^1.3.21"
+    warn-once "^0.1.0"
+
+"@react-navigation/native@^6.1.9":
+  version "6.1.9"
+  resolved "https://registry.yarnpkg.com/@react-navigation/native/-/native-6.1.9.tgz#8ef87095cd9c2ed094308c726157c7f6fc28796e"
+  integrity sha512-AMuJDpwXE7UlfyhIXaUCCynXmv69Kb8NzKgKJO7v0k0L+u6xUTbt6xvshmJ79vsvaFyaEH9Jg5FMzek5/S5qNw==
+  dependencies:
+    "@react-navigation/core" "^6.4.10"
+    escape-string-regexp "^4.0.0"
+    fast-deep-equal "^3.1.3"
+    nanoid "^3.1.23"
+
+"@react-navigation/routers@^6.1.9":
+  version "6.1.9"
+  resolved "https://registry.yarnpkg.com/@react-navigation/routers/-/routers-6.1.9.tgz#73f5481a15a38e36592a0afa13c3c064b9f90bed"
+  integrity sha512-lTM8gSFHSfkJvQkxacGM6VJtBt61ip2XO54aNfswD+KMw6eeZ4oehl7m0me3CR9hnDE4+60iAZR8sAhvCiI3NA==
+  dependencies:
+    nanoid "^3.1.23"
+
 "@segment/loosely-validate-event@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@segment/loosely-validate-event/-/loosely-validate-event-2.0.0.tgz#87dfc979e5b4e7b82c5f1d8b722dfd5d77644681"
@@ -2034,6 +2200,108 @@
   dependencies:
     "@sinonjs/commons" "^3.0.0"
 
+"@tamagui/accordion@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/accordion/-/accordion-1.77.1.tgz#0f82a634c659a41657756b88f78962e143af19eb"
+  integrity sha512-gxoT/mGD1tD3Da4b8lgN4pc+V2odfBNZSJroogtwwXSJ6Bc2uKB7crhquK8lkJG8tAdY12F3PehiYcT/5jC73g==
+  dependencies:
+    "@tamagui/collapsible" "1.77.1"
+    "@tamagui/collection" "1.77.1"
+    "@tamagui/compose-refs" "1.77.1"
+    "@tamagui/core" "1.77.1"
+    "@tamagui/create-context" "1.77.1"
+    "@tamagui/polyfill-dev" "1.77.1"
+    "@tamagui/stacks" "1.77.1"
+    "@tamagui/use-controllable-state" "1.77.1"
+
+"@tamagui/adapt@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/adapt/-/adapt-1.77.1.tgz#9192949e71d0f77ab4491f675fcca44a938bbed2"
+  integrity sha512-/PiSJdJLBf4A+avykC+bLFP7Xqcs1GWwf56tISsf/O467RtdBPlEiXvL4OVogqsGH2NsH8jPczKghvbtvzpJ4Q==
+  dependencies:
+    "@tamagui/core" "1.77.1"
+
+"@tamagui/alert-dialog@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/alert-dialog/-/alert-dialog-1.77.1.tgz#e0553831c31bbf57a63711c6cb481c4022fa1ffc"
+  integrity sha512-retkYyPcYt514v1uhw/Yq7LeGnr2Ljj9XqkVB4SxzeGWByZoTd9le9HM6np2ee2iSLzxEI5v5Re6sQQU3ekFjg==
+  dependencies:
+    "@tamagui/animate-presence" "1.77.1"
+    "@tamagui/aria-hidden" "1.77.1"
+    "@tamagui/compose-refs" "1.77.1"
+    "@tamagui/core" "1.77.1"
+    "@tamagui/create-context" "1.77.1"
+    "@tamagui/dialog" "1.77.1"
+    "@tamagui/dismissable" "1.77.1"
+    "@tamagui/focus-scope" "1.77.1"
+    "@tamagui/polyfill-dev" "1.77.1"
+    "@tamagui/popper" "1.77.1"
+    "@tamagui/portal" "1.77.1"
+    "@tamagui/remove-scroll" "1.77.1"
+    "@tamagui/stacks" "1.77.1"
+    "@tamagui/text" "1.77.1"
+    "@tamagui/use-controllable-state" "1.77.1"
+
+"@tamagui/animate-presence@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/animate-presence/-/animate-presence-1.77.1.tgz#207c1a7e4680ff568e5878b1550f6a5d296da1be"
+  integrity sha512-2/37vdQk0B+d6/yJhCv0k0GyTLqJ6VxLXEKFHuBGBag6gvKRMDL4HbD+IrNg+UJDaVuY+fR99K1q9pgvTxLm0Q==
+  dependencies:
+    "@tamagui/use-force-update" "1.77.1"
+    "@tamagui/use-presence" "1.77.1"
+    "@tamagui/web" "1.77.1"
+
+"@tamagui/animate@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/animate/-/animate-1.77.1.tgz#21e264d59649329946de910a1648e1b38d81ec9d"
+  integrity sha512-hBBaqbzVDCGL1TlJPZJ8Kfj9VLb04sU08qDVulykwmGzE8f9ZxWRVLqqRkOOQbs40smixA76GqxYnAjkN3SL8w==
+  dependencies:
+    "@tamagui/animate-presence" "1.77.1"
+
+"@tamagui/animations-css@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/animations-css/-/animations-css-1.77.1.tgz#fa6f808eb5bd3b78a07fdc972ceded55267180c1"
+  integrity sha512-UIuqofncXtIRtwXsWpiMD7GxgImDqQMSRXiUA120XkV0eLnugxWF7Aw3yckIoVNXoq5vfzqdakv/LYQ9M2ygwA==
+  dependencies:
+    "@tamagui/cubic-bezier-animator" "1.77.1"
+    "@tamagui/use-presence" "1.77.1"
+    "@tamagui/web" "1.77.1"
+    react "^18.2.0"
+
+"@tamagui/animations-moti@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/animations-moti/-/animations-moti-1.77.1.tgz#72d4094fffc4daa731fe09d2c6054e550c3edb80"
+  integrity sha512-5ryBVx1dP7thU7ancE+o3tONFvW3Y7CGd/4M32Xa4wrFU3nvAsad5EenyXwlLLy6y3cuzq8UAqbPpO4c0Lpa7w==
+  dependencies:
+    "@tamagui/use-presence" "1.77.1"
+    "@tamagui/web" "1.77.1"
+    moti "^0.25.3"
+
+"@tamagui/animations-react-native@1.77.1", "@tamagui/animations-react-native@^1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/animations-react-native/-/animations-react-native-1.77.1.tgz#46d0954ab02a0ebbc91ef44333cfbed69e072b11"
+  integrity sha512-EveNvDVIlQK0PE5eM9v0H5O++okoXSa0KRb63C20tMnDSPgtDUQ555tYxCtStS77Dw8nhaPpPZY9HV/rbOXhFQ==
+  dependencies:
+    "@tamagui/use-presence" "1.77.1"
+    "@tamagui/web" "1.77.1"
+
+"@tamagui/aria-hidden@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/aria-hidden/-/aria-hidden-1.77.1.tgz#fbf7ab6c0970171f87aba519f7193c8a4d6cb816"
+  integrity sha512-+TOGNv6lsEfYRND6AvyM8xlI0oDu7pRLBrr7e1bqXzAo7WTJOa5Qb+ZX9DrImgAW1ZHAh9hXvfMDkchNnUh/+g==
+  dependencies:
+    aria-hidden "^1.1.3"
+
+"@tamagui/avatar@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/avatar/-/avatar-1.77.1.tgz#2e5687b72d76fac8a689c6f8c640bb1983c360f2"
+  integrity sha512-Ni3mlLfRhLnaCVPmotTZLnEmRaR6W27O+u5NMLY/85NxK8MfO+AKgH6fnzvtXqPY1lQNd7hr1fVvL9Km7/lD6g==
+  dependencies:
+    "@tamagui/core" "1.77.1"
+    "@tamagui/image" "1.77.1"
+    "@tamagui/shapes" "1.77.1"
+    "@tamagui/text" "1.77.1"
+
 "@tamagui/babel-plugin@^1.77.1":
   version "1.77.1"
   resolved "https://registry.yarnpkg.com/@tamagui/babel-plugin/-/babel-plugin-1.77.1.tgz#f5e331692972f0f2e216f17a5104a49a467e7324"
@@ -2061,10 +2329,76 @@
     lodash.debounce "^4.0.8"
     typescript "^5.2.2"
 
+"@tamagui/button@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/button/-/button-1.77.1.tgz#2d3abe88b40b343022211c8fb141412f01699a1c"
+  integrity sha512-PglsBehjnfp+EhUoCSffcaXlxGRQJtMoK41oZnayuDRS/VxmQ9plCBukIyiABh8Pc6gN0xktZH0uBbjYHN+8Ow==
+  dependencies:
+    "@tamagui/font-size" "1.77.1"
+    "@tamagui/get-button-sized" "1.77.1"
+    "@tamagui/helpers-tamagui" "1.77.1"
+    "@tamagui/text" "1.77.1"
+    "@tamagui/web" "1.77.1"
+
+"@tamagui/card@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/card/-/card-1.77.1.tgz#2eff89ff2f04ac4c737f635569ad62638523d541"
+  integrity sha512-czgybkTwMwc8Fdc86m2AS686ExZjIwqV2mlEAKOJJKJkoDjgpimyractZnYOAgH30gwT8OF9oxKlmQRnJTrMzQ==
+  dependencies:
+    "@tamagui/create-context" "1.77.1"
+    "@tamagui/stacks" "1.77.1"
+    "@tamagui/web" "1.77.1"
+
+"@tamagui/checkbox@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/checkbox/-/checkbox-1.77.1.tgz#d2ff6afe9163824cff7c618a934821de63b074c7"
+  integrity sha512-M8KDhZYesyQ/vLkwpSjMsK8R7uNC/n24oxx2c+SKwiQQlE/kj9mGSFrqHKSN2XTpEjQ8nVHPms9fieP9DDezJw==
+  dependencies:
+    "@tamagui/core" "1.77.1"
+    "@tamagui/create-context" "1.77.1"
+    "@tamagui/focusable" "1.77.1"
+    "@tamagui/font-size" "1.77.1"
+    "@tamagui/get-token" "1.77.1"
+    "@tamagui/helpers-tamagui" "1.77.1"
+    "@tamagui/label" "1.77.1"
+    "@tamagui/stacks" "1.77.1"
+    "@tamagui/use-controllable-state" "1.77.1"
+    "@tamagui/use-previous" "1.77.1"
+
 "@tamagui/cli-color@1.77.1":
   version "1.77.1"
   resolved "https://registry.yarnpkg.com/@tamagui/cli-color/-/cli-color-1.77.1.tgz#87017ca8a48a830e9939b3c00de6ae9da348e8c0"
   integrity sha512-hICDnTQyi6HdwFZquEBw5l5c+8L+9FpR6Q8iVlz2deYZaU52DEGFn3I2ze1HN/fwdTi5IOR2bRHvBiSwfnWskw==
+
+"@tamagui/collapsible@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/collapsible/-/collapsible-1.77.1.tgz#b21ad61b71691f89e5e0a1488ce07eb025635a6f"
+  integrity sha512-Oi7vkHGzrJ6c8QKgy9SZT5zqFm6ITQSJ0tQGe+Ahy/j38+uwZhXedABZzihD7/NEOnRFadD8xoq0d+allmHkrQ==
+  dependencies:
+    "@tamagui/animate-presence" "1.77.1"
+    "@tamagui/compose-refs" "1.77.1"
+    "@tamagui/core" "1.77.1"
+    "@tamagui/create-context" "1.77.1"
+    "@tamagui/polyfill-dev" "1.77.1"
+    "@tamagui/stacks" "1.77.1"
+    "@tamagui/use-controllable-state" "1.77.1"
+
+"@tamagui/collection@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/collection/-/collection-1.77.1.tgz#f388ed83168201debd956a10ee40cdee62f134af"
+  integrity sha512-/qvUxshIkvGIuTapEW2XimMQBXdCMtdziLmsrtNWqST/e4NYJNi1h4OWwI8rxgjJaH22kuU589qKr4oah79kyA==
+  dependencies:
+    "@tamagui/compose-refs" "1.77.1"
+    "@tamagui/core" "1.77.1"
+    "@tamagui/create-context" "1.77.1"
+    "@tamagui/polyfill-dev" "1.77.1"
+    "@tamagui/stacks" "1.77.1"
+    "@tamagui/use-controllable-state" "1.77.1"
+
+"@tamagui/colors@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/colors/-/colors-1.77.1.tgz#0c995baeae38302d87bd57f5c4ff718318f2700d"
+  integrity sha512-2e8R7grjckttfjALbrubgXd7e/iMqRAut/nIfq0HqAs6dTP65kvZp0o1RFGqp+wEnCf3FWnqXoS0VMmapWyruw==
 
 "@tamagui/compose-refs@1.77.1":
   version "1.77.1"
@@ -2078,6 +2412,22 @@
   dependencies:
     "@tamagui/core" "1.77.1"
     "@tamagui/shorthands" "1.77.1"
+
+"@tamagui/config@^1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/config/-/config-1.77.1.tgz#19230fb54bea8f3aac85abd219ac66401a77514a"
+  integrity sha512-SObStNG8AMvAQfCi77ShYj0SB5Fi+sywhJAimPyUwRIOaE1u45YJ5D5fjhE8VF8GwpImMqxiuZFYoqJgirRYHA==
+  dependencies:
+    "@tamagui/animations-css" "1.77.1"
+    "@tamagui/animations-moti" "1.77.1"
+    "@tamagui/animations-react-native" "1.77.1"
+    "@tamagui/colors" "1.77.1"
+    "@tamagui/font-inter" "1.77.1"
+    "@tamagui/font-silkscreen" "1.77.1"
+    "@tamagui/react-native-media-driver" "1.77.1"
+    "@tamagui/shorthands" "1.77.1"
+    "@tamagui/themes" "1.77.1"
+    "@tamagui/web" "1.77.1"
 
 "@tamagui/constants@1.77.1":
   version "1.77.1"
@@ -2094,6 +2444,11 @@
     "@tamagui/use-event" "1.77.1"
     "@tamagui/web" "1.77.1"
 
+"@tamagui/create-context@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/create-context/-/create-context-1.77.1.tgz#7f8d78daab4d6e049469b16d7fac606fbc43aca5"
+  integrity sha512-h1yfCbLndkvdL4lcIptHtW3mQJUvvAIGHrpI8FeKga7Nb52q3/LOtbet8cSYeCAJ1Wha0qqXsOfx+v13swH1mg==
+
 "@tamagui/create-theme@1.77.1":
   version "1.77.1"
   resolved "https://registry.yarnpkg.com/@tamagui/create-theme/-/create-theme-1.77.1.tgz#c94d1b4b3f534fff1e4e74f7d78a77c408157fb5"
@@ -2101,10 +2456,106 @@
   dependencies:
     "@tamagui/web" "1.77.1"
 
+"@tamagui/cubic-bezier-animator@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/cubic-bezier-animator/-/cubic-bezier-animator-1.77.1.tgz#a5645b57c1620e808518155ecc681408ed975a4d"
+  integrity sha512-hz9+3ezWDechH6XtLfWrcMw3m/2dSOGAF8Ewif7qf18PbSP/pWYJnPVMkhw3rDMFJG70HlugzQSN2pf7MzrPag==
+
+"@tamagui/dialog@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/dialog/-/dialog-1.77.1.tgz#dc46e341985e18db4c02544cbc832ac5ba62a433"
+  integrity sha512-x4pfzxU1ato+N9AdOSmXyY9BRGaQf/+/xbQ+FOTm+Vq3gqxXSSAx+gQEjv06Fh+v13h+HZ1c7THtSPCXB/rutQ==
+  dependencies:
+    "@tamagui/adapt" "1.77.1"
+    "@tamagui/animate-presence" "1.77.1"
+    "@tamagui/aria-hidden" "1.77.1"
+    "@tamagui/compose-refs" "1.77.1"
+    "@tamagui/core" "1.77.1"
+    "@tamagui/create-context" "1.77.1"
+    "@tamagui/dismissable" "1.77.1"
+    "@tamagui/focus-scope" "1.77.1"
+    "@tamagui/polyfill-dev" "1.77.1"
+    "@tamagui/popper" "1.77.1"
+    "@tamagui/portal" "1.77.1"
+    "@tamagui/remove-scroll" "1.77.1"
+    "@tamagui/sheet" "1.77.1"
+    "@tamagui/stacks" "1.77.1"
+    "@tamagui/text" "1.77.1"
+    "@tamagui/use-controllable-state" "1.77.1"
+
+"@tamagui/dismissable@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/dismissable/-/dismissable-1.77.1.tgz#3c5585df10ac9a17bb1200c6142a11b3eac4cc97"
+  integrity sha512-J7TviPezLOqpS1aaIMHbOa8kAQ2MBAbQ5OPxUd4EG1I7V3jDt8odiA5nWmxdGN/LkUbxqf+gyJFf6f/C6CovFQ==
+  dependencies:
+    "@tamagui/compose-refs" "1.77.1"
+    "@tamagui/core" "1.77.1"
+    "@tamagui/use-escape-keydown" "1.77.1"
+    "@tamagui/use-event" "1.77.1"
+
 "@tamagui/fake-react-native@1.77.1":
   version "1.77.1"
   resolved "https://registry.yarnpkg.com/@tamagui/fake-react-native/-/fake-react-native-1.77.1.tgz#120102d927c7764241acb0dc1621663298a3c295"
   integrity sha512-7LXMzG9vi4DFmQjnE9jZg7QP20V9xBAxRwnTXZs8Wze3fNQJoolNZx37RAkjVrOGgad0fEj23+PYSZoIwkz9yg==
+
+"@tamagui/floating@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/floating/-/floating-1.77.1.tgz#d785c37cda23b1d43bf926cad9a3be734a60e284"
+  integrity sha512-KENXCbP6iqqJF6BMzSS0tfrbO1Shw4wugZM0wvvktufcR/AnE1bzqNUZ3GJiOOrqt2fL7ibTMRDZ/4mT7MSuwg==
+  dependencies:
+    "@floating-ui/react-dom" "^2.0.1"
+    "@floating-ui/react-native" "^0.10.1"
+    react-dom "^18.2.0"
+
+"@tamagui/focus-scope@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/focus-scope/-/focus-scope-1.77.1.tgz#d37cf4ae2a5867bc33d7dc69950236eb8bf1ed4e"
+  integrity sha512-jeeL7GtFWubcuRwbf3FjVkKaas0EAKcU+8l4R7H5EkrzD25HFyA2sFJBUdWh6XR/g8IdemiyoOBD9W++fC1DaQ==
+  dependencies:
+    "@tamagui/compose-refs" "1.77.1"
+    "@tamagui/use-event" "1.77.1"
+
+"@tamagui/focusable@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/focusable/-/focusable-1.77.1.tgz#b13f71acf4b3ee247c35d4ab51cf8cb3eb714394"
+  integrity sha512-UaKE1hMI2tnAOpVoH4zjRzerWoGcXZadIeZLAKqtjLCqoOWqoj76DDOPI5yyJ6gEr4bFUw4KcoFOwlUIv0Betw==
+  dependencies:
+    "@tamagui/compose-refs" "1.77.1"
+    "@tamagui/web" "1.77.1"
+
+"@tamagui/font-inter@1.77.1", "@tamagui/font-inter@^1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/font-inter/-/font-inter-1.77.1.tgz#60e662db09acfffca8014e1e21385c7811e7ee28"
+  integrity sha512-Jt7uX+6znisrH69Bx+qVRPQsitBUgOcqJjfGKQu25Ymm/97TBsl7MWfAmOT7wxU79HGy+uy+PYnUjSE5TSWttg==
+  dependencies:
+    "@tamagui/core" "1.77.1"
+
+"@tamagui/font-silkscreen@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/font-silkscreen/-/font-silkscreen-1.77.1.tgz#01029e3eadaef768de13b1658d79df70be2eed35"
+  integrity sha512-Xh1R0hxBWSZFvNrYG5h0CI9W1Kc9bG1q/R0B4sLZVyCBaHdr78yR6MqMrp4JnOtFK0O3ls5VPenToLr2+RyrkQ==
+  dependencies:
+    "@tamagui/core" "1.77.1"
+
+"@tamagui/font-size@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/font-size/-/font-size-1.77.1.tgz#75e907473d7fbd352b8f2f962fd7a303bf7a6b42"
+  integrity sha512-cBKAhY+IlHsBvOce+MhcjsNWJc/duZovetVsvq7tdN/hT4l9djaZW5hikPAk8RUwWp/Pub+W7W9GHyMHPHI4Rw==
+  dependencies:
+    "@tamagui/core" "1.77.1"
+
+"@tamagui/form@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/form/-/form-1.77.1.tgz#d5351d22650dc39f26285defe6a444e5113f8efa"
+  integrity sha512-iz7TNTyVpt9ESSNZWL8jKzMpy0nV0j7gPP6zGSWPiWm+vrOy95BMeHjMKIxVvcNMIYlliU8Crotskj9wKNqbhg==
+  dependencies:
+    "@tamagui/compose-refs" "1.77.1"
+    "@tamagui/core" "1.77.1"
+    "@tamagui/create-context" "1.77.1"
+    "@tamagui/focusable" "1.77.1"
+    "@tamagui/get-button-sized" "1.77.1"
+    "@tamagui/get-font-sized" "1.77.1"
+    "@tamagui/text" "1.77.1"
 
 "@tamagui/generate-themes@1.77.1":
   version "1.77.1"
@@ -2116,12 +2567,53 @@
     esbuild-register "^3.4.2"
     fs-extra "^11.1.0"
 
+"@tamagui/get-button-sized@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/get-button-sized/-/get-button-sized-1.77.1.tgz#ac2530bbaadfced25f2f14400302e2f3fa82af9e"
+  integrity sha512-ZmtZaUGHWGp8Qq0e7XlHInodURV4IJe5j0e87bhVLAzHt8XkkLoEk9PRhmRliEISojCwiF3j2qowT32rOTtkLg==
+  dependencies:
+    "@tamagui/get-token" "1.77.1"
+    "@tamagui/web" "1.77.1"
+
+"@tamagui/get-font-sized@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/get-font-sized/-/get-font-sized-1.77.1.tgz#f5575eac3db78780dfc33c1e48405dbeacf8643b"
+  integrity sha512-E8xA0am5T5bgoEVhWz7oIIQpZV6VPiFqskJOpxvPeilvptAwmya7P+zj4OxvSo0ggWn/JgHf3c7lbbQ5sJp9Lw==
+  dependencies:
+    "@tamagui/core" "1.77.1"
+
+"@tamagui/get-token@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/get-token/-/get-token-1.77.1.tgz#beb619a0a49ce9be184551d8179ddd82a183d16d"
+  integrity sha512-DiqvM7e7trWolgQlVYTtAUL1yVPHHRY6LHHaiFhd3WOxdF+6iL75J9lrmwLAwSAtc7Hw9rHrT3ZXasiJ+9Tkdw==
+  dependencies:
+    "@tamagui/web" "1.77.1"
+
+"@tamagui/group@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/group/-/group-1.77.1.tgz#720516e3dc3e1d4d57be135f2fc9523772def3df"
+  integrity sha512-Hw2jiqTxyQuL89EBqEjkREzhbV1y37jYDEzbpGZVrvCaAJ56tEadnFjbfzJSBGCNPdc7tEc13W/DMiymmHuyFA==
+  dependencies:
+    "@tamagui/core" "1.77.1"
+    "@tamagui/create-context" "1.77.1"
+    "@tamagui/stacks" "1.77.1"
+    "@tamagui/use-controllable-state" "1.77.1"
+    reforest "^0.13.0"
+
 "@tamagui/helpers-node@1.77.1":
   version "1.77.1"
   resolved "https://registry.yarnpkg.com/@tamagui/helpers-node/-/helpers-node-1.77.1.tgz#b63de22e386358e8248abc58d5742e301f018bc5"
   integrity sha512-yd/qpUowvKzn9t0Zv3+lE0Ksw0GycUajbv5wjBIepZt/stE7C9vwoZxGKysd+tPcPy5TOJMdA/QpzQVI+5tDyA==
   dependencies:
     "@tamagui/types" "1.77.1"
+
+"@tamagui/helpers-tamagui@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/helpers-tamagui/-/helpers-tamagui-1.77.1.tgz#83a5f34eef0b0e94d46f128a3eb918887c0feaa5"
+  integrity sha512-KSFjXUr0/raH2ytxrUDdPtw+FqtRvZ3df7++uC6Y3oouIFED/gJUO+ZyJ3q1NQuPe/dHSiKk1oiRDEMyKxMHZQ==
+  dependencies:
+    "@tamagui/helpers" "1.77.1"
+    "@tamagui/web" "1.77.1"
 
 "@tamagui/helpers@1.77.1":
   version "1.77.1"
@@ -2131,6 +2623,46 @@
     "@tamagui/constants" "1.77.1"
     "@tamagui/simple-hash" "1.77.1"
 
+"@tamagui/image@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/image/-/image-1.77.1.tgz#74774e5e1b2fde3259dffed890dfbf19fa0e478f"
+  integrity sha512-lrca5x/TQ3BBImiX4o5zca5Y0IV4KhGv6woUM6BXB+GjJSrW6nP5KfFg0JE8HIrtiCsIl7LARgNi2zlL2qBKLA==
+  dependencies:
+    "@tamagui/core" "1.77.1"
+
+"@tamagui/label@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/label/-/label-1.77.1.tgz#c36b1ef81fa0b5b8cf0616511874f4a7cd59f1f3"
+  integrity sha512-CDRlqI5FS5J7Q4hFesXb8Za0GS+7Dg9JbUVTgjk3qnjT1AwASBk8O2Qw00+Xi3j4ckBlYdZhRswE+zcSXKxgew==
+  dependencies:
+    "@tamagui/compose-refs" "1.77.1"
+    "@tamagui/create-context" "1.77.1"
+    "@tamagui/focusable" "1.77.1"
+    "@tamagui/get-button-sized" "1.77.1"
+    "@tamagui/get-font-sized" "1.77.1"
+    "@tamagui/text" "1.77.1"
+    "@tamagui/web" "1.77.1"
+
+"@tamagui/linear-gradient@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/linear-gradient/-/linear-gradient-1.77.1.tgz#9eebc4c2a416d6040ddf9e7b60fd461ab6026a8d"
+  integrity sha512-DthcImcvxcMFzTXH3mY2ekyZ+NGFglm4llegNDJOB6LNIYMPOi2SNRwsTtqYRZawy/RFDvvbRi35gxc0jkuLNw==
+  dependencies:
+    "@tamagui/core" "1.77.1"
+    "@tamagui/stacks" "1.77.1"
+
+"@tamagui/list-item@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/list-item/-/list-item-1.77.1.tgz#ad96be117a9f89f52d26239249df81fc5cd754e8"
+  integrity sha512-s7+ZNjWwzZFwyKKCD9rvQyIMOk8Vd2z42f5OLLndYbZuEg8EZ00iayxbhWTvsgpA9EvV7b6nuhi2kpg34vQPaA==
+  dependencies:
+    "@tamagui/font-size" "1.77.1"
+    "@tamagui/get-font-sized" "1.77.1"
+    "@tamagui/get-token" "1.77.1"
+    "@tamagui/helpers-tamagui" "1.77.1"
+    "@tamagui/text" "1.77.1"
+    "@tamagui/web" "1.77.1"
+
 "@tamagui/normalize-css-color@1.77.1":
   version "1.77.1"
   resolved "https://registry.yarnpkg.com/@tamagui/normalize-css-color/-/normalize-css-color-1.77.1.tgz#0121c0af31ba91cc8eb77bce6b31d38d29fc528c"
@@ -2138,10 +2670,93 @@
   dependencies:
     "@react-native/normalize-color" "^2.1.0"
 
+"@tamagui/polyfill-dev@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/polyfill-dev/-/polyfill-dev-1.77.1.tgz#1d940531b64f1945d8a774f29eecb62016a96fe5"
+  integrity sha512-AhJxBwDayGU60Gjh6kggQWhOGeAw7SMmjVn8EOqZVNoGGmNe8bBhe3A2YFilR6qdSm5U5Ketl/KvvU933ihgLg==
+
+"@tamagui/popover@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/popover/-/popover-1.77.1.tgz#4af98d852bc67cb4be1fa9f1f8a12bcfbc2a6e76"
+  integrity sha512-cS1sG7ah/RWanjEsBJ5q76L+5VwyjUBT7b4sK3h1RY7CYRmLW+jzCwAQB3H/79LyzIiaWZavWqozg/wjkN5BnQ==
+  dependencies:
+    "@floating-ui/react" "^0.24.7"
+    "@tamagui/adapt" "1.77.1"
+    "@tamagui/animate" "1.77.1"
+    "@tamagui/aria-hidden" "1.77.1"
+    "@tamagui/compose-refs" "1.77.1"
+    "@tamagui/core" "1.77.1"
+    "@tamagui/dismissable" "1.77.1"
+    "@tamagui/floating" "1.77.1"
+    "@tamagui/focus-scope" "1.77.1"
+    "@tamagui/polyfill-dev" "1.77.1"
+    "@tamagui/popper" "1.77.1"
+    "@tamagui/portal" "1.77.1"
+    "@tamagui/remove-scroll" "1.77.1"
+    "@tamagui/scroll-view" "1.77.1"
+    "@tamagui/sheet" "1.77.1"
+    "@tamagui/stacks" "1.77.1"
+    "@tamagui/use-controllable-state" "1.77.1"
+    react-freeze "^1.0.3"
+
+"@tamagui/popper@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/popper/-/popper-1.77.1.tgz#326be4f44c7615af1ebe4346cba13387648fdc3d"
+  integrity sha512-FnCF6LBNe7fe7XwJ6gr8HFTxgxRdWirh1FMYoP2sR/ib5qWCZHh0X7CPkJAusngaW5BPBHlRUQ76Xa60fYfqlg==
+  dependencies:
+    "@tamagui/compose-refs" "1.77.1"
+    "@tamagui/core" "1.77.1"
+    "@tamagui/floating" "1.77.1"
+    "@tamagui/get-token" "1.77.1"
+    "@tamagui/stacks" "1.77.1"
+    "@tamagui/use-controllable-state" "1.77.1"
+
+"@tamagui/portal@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/portal/-/portal-1.77.1.tgz#365dc2dc218d6e817ba5b4999cb2a60b60b159a7"
+  integrity sha512-NodEehwRauFc0MqlzfyPVrRdqURLhK+xS7hDek/Xny8ktb+MC9IyDQmd9xCnrW79bKyL0G+Ig1lgrDVYQiq9bQ==
+  dependencies:
+    "@tamagui/core" "1.77.1"
+    "@tamagui/stacks" "1.77.1"
+    "@tamagui/use-event" "1.77.1"
+
+"@tamagui/progress@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/progress/-/progress-1.77.1.tgz#0c283669fe372c4468134764cdc95f3b00a3fe43"
+  integrity sha512-zEP42mBQLEo+XY6q6qiIpXZqkB5Yj4aF5hMiEbkhsHxrtq47zZ2ui7DXi36B/Xyj9WZzg0tE2+zQRY8Sv+sozg==
+  dependencies:
+    "@tamagui/compose-refs" "1.77.1"
+    "@tamagui/core" "1.77.1"
+    "@tamagui/create-context" "1.77.1"
+    "@tamagui/get-token" "1.77.1"
+    "@tamagui/stacks" "1.77.1"
+
 "@tamagui/proxy-worm@1.77.1":
   version "1.77.1"
   resolved "https://registry.yarnpkg.com/@tamagui/proxy-worm/-/proxy-worm-1.77.1.tgz#e246663074657e947aa9aa5068bb5f53b1f70e0e"
   integrity sha512-i9DaG/IXzWlZPr3FJWOziG6kpseBDpJY81uYHbJfNKcuO1O2NOjoaJxVKn03Z51ShusZPMsph5OvFT/nhwM82Q==
+
+"@tamagui/radio-group@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/radio-group/-/radio-group-1.77.1.tgz#3fa3544d2cf24d5ac0c5b17a3bf07c84f65f2ce7"
+  integrity sha512-DL6TRnxiJms0ahtu76pYVQ60ji4mxXWtu185PVo/ox27jhxAd8pyIoT6De/zHo1qpldLuh1HaZGHnYXohIczOw==
+  dependencies:
+    "@tamagui/compose-refs" "1.77.1"
+    "@tamagui/core" "1.77.1"
+    "@tamagui/create-context" "1.77.1"
+    "@tamagui/focusable" "1.77.1"
+    "@tamagui/get-token" "1.77.1"
+    "@tamagui/label" "1.77.1"
+    "@tamagui/stacks" "1.77.1"
+    "@tamagui/use-controllable-state" "1.77.1"
+    "@tamagui/use-previous" "1.77.1"
+
+"@tamagui/react-native-media-driver@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/react-native-media-driver/-/react-native-media-driver-1.77.1.tgz#d1c3a08b578a2da2448df6440fa6d334c3bdce4c"
+  integrity sha512-3VeqiHmFpfJG+11fKFD5sPq7b29RyjaEmfaj7ZyYBmMmmO7xydeN7YuDF0ei2E6yUIRLjbADvbVcrLbvNPCbUA==
+  dependencies:
+    "@tamagui/web" "1.77.1"
 
 "@tamagui/react-native-prebuilt@1.77.1":
   version "1.77.1"
@@ -2158,6 +2773,95 @@
   resolved "https://registry.yarnpkg.com/@tamagui/react-native-use-responder-events/-/react-native-use-responder-events-1.77.1.tgz#e72651f72f01976b4b6cae2b5366eda31931dba4"
   integrity sha512-R2jOHKzedV8CbG0PW8lj04dB6DuhB+dn6oLMd1gMKxgjDpy62NmV+u1bd+qz4T/C9LlTCRQB2hpi3qedR7hO+g==
 
+"@tamagui/remove-scroll@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/remove-scroll/-/remove-scroll-1.77.1.tgz#ecb119b1376183eeac2f9230d725c54b40be6cc5"
+  integrity sha512-JUOnKw2xCgqEaXp9d7FNmA9CVsrYIzLzkuF0tdgamGQ7glFZMSYV8TtqayHFdnI5hCpq68ya4FkVeSlgHuNcYQ==
+  dependencies:
+    react-remove-scroll "^2.5.5"
+
+"@tamagui/roving-focus@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/roving-focus/-/roving-focus-1.77.1.tgz#a9c92433b5e879058127a73118b836ba36beb49a"
+  integrity sha512-gVfPoz1V5d/RbCEooGVzdmg4lXVyAxzr0+iqfyOUKHM2DeaTGsiF7Jh4PdOJ8Fpszsjo1W3Mv1cKIZ1Z07eO9Q==
+  dependencies:
+    "@tamagui/collection" "1.77.1"
+    "@tamagui/compose-refs" "1.77.1"
+    "@tamagui/core" "1.77.1"
+    "@tamagui/create-context" "1.77.1"
+    "@tamagui/use-controllable-state" "1.77.1"
+    "@tamagui/use-direction" "1.77.1"
+    "@tamagui/use-event" "1.77.1"
+
+"@tamagui/scroll-view@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/scroll-view/-/scroll-view-1.77.1.tgz#90774af0e86e987f95bc213c72473570166417c1"
+  integrity sha512-Vr35qrRNTE6MCnHbpLo3cH2tDqnb6A4xWHxC6ygBSGRQEqsrQUYfZqW7HwMpyKFXFbRxOWVrxOiqsyL6OT5HkQ==
+  dependencies:
+    "@tamagui/stacks" "1.77.1"
+    "@tamagui/web" "1.77.1"
+
+"@tamagui/select@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/select/-/select-1.77.1.tgz#a25e76a65d7dfbc1b4d0710627952cdee63a9aa7"
+  integrity sha512-h4kD8POyWd22iSYBFgq4sOfS8EplS2Tb8z16QJOJZd5zqg+DlcBZByCCKDs7tIydS0C8BiuD+TYjZJGSXlCeiQ==
+  dependencies:
+    "@floating-ui/react" "^0.24.7"
+    "@floating-ui/react-dom" "^2.0.1"
+    "@floating-ui/react-native" "^0.10.1"
+    "@tamagui/adapt" "1.77.1"
+    "@tamagui/animate-presence" "1.77.1"
+    "@tamagui/compose-refs" "1.77.1"
+    "@tamagui/core" "1.77.1"
+    "@tamagui/create-context" "1.77.1"
+    "@tamagui/dismissable" "1.77.1"
+    "@tamagui/focus-scope" "1.77.1"
+    "@tamagui/get-token" "1.77.1"
+    "@tamagui/list-item" "1.77.1"
+    "@tamagui/portal" "1.77.1"
+    "@tamagui/remove-scroll" "1.77.1"
+    "@tamagui/separator" "1.77.1"
+    "@tamagui/sheet" "1.77.1"
+    "@tamagui/stacks" "1.77.1"
+    "@tamagui/text" "1.77.1"
+    "@tamagui/use-controllable-state" "1.77.1"
+    "@tamagui/use-event" "1.77.1"
+    "@tamagui/use-previous" "1.77.1"
+    react-dom "^18.2.0"
+
+"@tamagui/separator@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/separator/-/separator-1.77.1.tgz#855c18d2e9419762aba885b1a8761b11a9189e2c"
+  integrity sha512-MeRo9NtMDk+2hz0D3bfw72Km4q1BWSj6dVaOEbV5gUMd1mIqxMuIdYHqaiejW6QUgd8wIwr0m8xzZOzHqg4Pkw==
+  dependencies:
+    "@tamagui/core" "1.77.1"
+
+"@tamagui/shapes@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/shapes/-/shapes-1.77.1.tgz#6c632e66d219e2429fc749c1a6d5b58630253619"
+  integrity sha512-CzXJziuhksbeaKN+RalsTVcmThKFJ0Yn87Cjbupf0BAGx2py15qQ90L0asg32MP19MRiErvx+sp6uphRbwvxCA==
+  dependencies:
+    "@tamagui/stacks" "1.77.1"
+    "@tamagui/web" "1.77.1"
+
+"@tamagui/sheet@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/sheet/-/sheet-1.77.1.tgz#1f8c78aa6e88c08a9f94486d258a7f411c5e319d"
+  integrity sha512-SP+cnMRr9AhxzxO1JVWjXOB7TQcH6BvhlSdlsBnj2HyAbt+1dfobDWFq4ltkGgfo3kHjTWsOci5X/2EHa6YaTQ==
+  dependencies:
+    "@tamagui/animate-presence" "1.77.1"
+    "@tamagui/animations-react-native" "1.77.1"
+    "@tamagui/compose-refs" "1.77.1"
+    "@tamagui/core" "1.77.1"
+    "@tamagui/create-context" "1.77.1"
+    "@tamagui/portal" "1.77.1"
+    "@tamagui/remove-scroll" "1.77.1"
+    "@tamagui/scroll-view" "1.77.1"
+    "@tamagui/stacks" "1.77.1"
+    "@tamagui/use-constant" "1.77.1"
+    "@tamagui/use-controllable-state" "1.77.1"
+    "@tamagui/use-keyboard-visible" "1.77.1"
+
 "@tamagui/shorthands@1.77.1":
   version "1.77.1"
   resolved "https://registry.yarnpkg.com/@tamagui/shorthands/-/shorthands-1.77.1.tgz#2bad7068a7bcb6b3db78af9a629bc40ca933f235"
@@ -2167,6 +2871,27 @@
   version "1.77.1"
   resolved "https://registry.yarnpkg.com/@tamagui/simple-hash/-/simple-hash-1.77.1.tgz#d115dd643da9ce128265fc51506611cfcd5401a9"
   integrity sha512-IX3F2MQe+aIG+QzVu5sf7sCf81sYeNLvminB9DyJyUX2N970Z3wmBoQWtpgWZC9PugPlV2RFuDShBhVel98r6w==
+
+"@tamagui/slider@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/slider/-/slider-1.77.1.tgz#f21721c5213d98955b010a951a99448c55982744"
+  integrity sha512-duwH3HJrA6EEZu1EUDfGJxPl18DoWs0BUnSW8sREk1YhVbwPYqxDA4bQNwV6QJrki/zhM3k3SkEMlWyxkLvHmw==
+  dependencies:
+    "@tamagui/compose-refs" "1.77.1"
+    "@tamagui/core" "1.77.1"
+    "@tamagui/create-context" "1.77.1"
+    "@tamagui/get-token" "1.77.1"
+    "@tamagui/helpers" "1.77.1"
+    "@tamagui/stacks" "1.77.1"
+    "@tamagui/use-controllable-state" "1.77.1"
+    "@tamagui/use-direction" "1.77.1"
+
+"@tamagui/stacks@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/stacks/-/stacks-1.77.1.tgz#50b1032d1cb2ccd4ee34bcd53e25ad21cb2eea7d"
+  integrity sha512-xlyz+9XEFF5SYOVpRhX34bgOkLnpNvXEpjrHYheCTy+tpbwQvy25f7xUBbUQ72Co1CsYHqxaqLcoQsoMXCDJsw==
+  dependencies:
+    "@tamagui/core" "1.77.1"
 
 "@tamagui/static@1.77.1":
   version "1.77.1"
@@ -2205,15 +2930,140 @@
     react-native-web-internals "1.77.1"
     react-native-web-lite "1.77.1"
 
+"@tamagui/switch@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/switch/-/switch-1.77.1.tgz#37d1c213eb232c1d86c3689ea3d0dfc5c4a52eb8"
+  integrity sha512-wYMm5URsL6yKCXQo5RLBW9Z9ENoUKK6PQPveWRccW97mgKchcUUWQHDA9LBVWuEis2yiACJ8YQDr7YQepkvNEQ==
+  dependencies:
+    "@tamagui/compose-refs" "1.77.1"
+    "@tamagui/core" "1.77.1"
+    "@tamagui/create-context" "1.77.1"
+    "@tamagui/focusable" "1.77.1"
+    "@tamagui/get-token" "1.77.1"
+    "@tamagui/label" "1.77.1"
+    "@tamagui/stacks" "1.77.1"
+    "@tamagui/use-controllable-state" "1.77.1"
+    "@tamagui/use-previous" "1.77.1"
+
+"@tamagui/tabs@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/tabs/-/tabs-1.77.1.tgz#4c9cbaf9c914a02535bec2dd3ef5414547282458"
+  integrity sha512-fyptre5RSRP27IGYbeKI1e6NHNBJdWZc0cMGH3lgkYCX7lehKKOlZdFr6lwjD+54dmNQp1I6xwnkUx7sU+/blg==
+  dependencies:
+    "@tamagui/create-context" "1.77.1"
+    "@tamagui/get-button-sized" "1.77.1"
+    "@tamagui/group" "1.77.1"
+    "@tamagui/roving-focus" "1.77.1"
+    "@tamagui/stacks" "1.77.1"
+    "@tamagui/use-controllable-state" "1.77.1"
+    "@tamagui/use-direction" "1.77.1"
+    "@tamagui/web" "1.77.1"
+
+"@tamagui/text@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/text/-/text-1.77.1.tgz#3fae3b0ee092d743253336242a039aabba5fdfc5"
+  integrity sha512-XuxMnUlz/iLy7j2SmF0LSSbr3ueDU7cFa6khDpVAe0BZe28T/LXa53cQqsJd70SVujBYU9f38rfwDM8qarZB/g==
+  dependencies:
+    "@tamagui/get-font-sized" "1.77.1"
+    "@tamagui/helpers-tamagui" "1.77.1"
+    "@tamagui/web" "1.77.1"
+
+"@tamagui/theme-base@^1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/theme-base/-/theme-base-1.77.1.tgz#6bb4d78148c7dedab39e46e6d7d49b5e5ee18661"
+  integrity sha512-+MsNjmAu7dJxXBQteOcroo6FAt0lrU2Ov0iNu/nxXPRU7/xdVjLNNNpMrJyeVtZHJKsct7jsOoc7Y5u5JZV1Fw==
+
+"@tamagui/theme-builder@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/theme-builder/-/theme-builder-1.77.1.tgz#858d038c18e676422463fdc648aac57828228240"
+  integrity sha512-9Y7yVPtMBnKtNohmlbz0jYfjaCU52AtPoqf9oTBHrxX0nkSRTUilzmEeysJQ0SvrgJxwwxfbD4RK7UrQfe0dBg==
+  dependencies:
+    "@tamagui/create-theme" "1.77.1"
+
+"@tamagui/theme@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/theme/-/theme-1.77.1.tgz#7f8f0c0bb869050eac2a634772615fad16f12717"
+  integrity sha512-0jbvfazYzRNLYyUzBLPTkZALTAQ99KM8ZKIfSl/gwhVsdBpdmGdYsDDmSSoC+5GSFduaPnSTD/sHfNR24YFCDQ==
+  dependencies:
+    "@tamagui/constants" "1.77.1"
+    "@tamagui/web" "1.77.1"
+
+"@tamagui/themes@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/themes/-/themes-1.77.1.tgz#99ee661597e29f3fd8995ae8dcbd2dc0110b2bee"
+  integrity sha512-Rwvw/tW5n2udkt183SeptWlPzSrfRhJpZe6Bo93GFSb9Mb3irG2G5/8XL6sbmRbR79uqP0GuDyNd1v7XelZASQ==
+  dependencies:
+    "@tamagui/colors" "1.77.1"
+    "@tamagui/create-theme" "1.77.1"
+    "@tamagui/theme-builder" "1.77.1"
+    "@tamagui/web" "1.77.1"
+
 "@tamagui/timer@1.77.1":
   version "1.77.1"
   resolved "https://registry.yarnpkg.com/@tamagui/timer/-/timer-1.77.1.tgz#7e1fd5f9f7e9f2fc917760b108263b75a3dd0af1"
   integrity sha512-jtxGGnMVHgJpLweIVPSdTpklUNZvmnQOEcP4hGkdBq8sbOMFDh7vn2QCQeFKXWgZCnZlRN3lJb8PxhEt7Aj3Eg==
 
+"@tamagui/toggle-group@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/toggle-group/-/toggle-group-1.77.1.tgz#d3c917d4c23792dcda8e79985154ef4973783269"
+  integrity sha512-rKyiqhepJbtVrjvlkvf/zoTjS2jwfN05yEVmjDpV0c76lramSKSbTOy2rsZwy2PaKJ2Dp9K33EoElWeCddq7ng==
+  dependencies:
+    "@tamagui/create-context" "1.77.1"
+    "@tamagui/focusable" "1.77.1"
+    "@tamagui/font-size" "1.77.1"
+    "@tamagui/get-token" "1.77.1"
+    "@tamagui/group" "1.77.1"
+    "@tamagui/helpers-tamagui" "1.77.1"
+    "@tamagui/roving-focus" "1.77.1"
+    "@tamagui/stacks" "1.77.1"
+    "@tamagui/use-controllable-state" "1.77.1"
+    "@tamagui/use-direction" "1.77.1"
+    "@tamagui/web" "1.77.1"
+
+"@tamagui/tooltip@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/tooltip/-/tooltip-1.77.1.tgz#4c00fbac87dba551b543bb4aec2f762cb1e525d7"
+  integrity sha512-wd/cA20jLNErudCvcaBKZyyV0/Yamb4KLpRJU8oxc6IUywsy5c1JoBfd85+B2ZrqMGLyQs0jFw0sML5+kbabRQ==
+  dependencies:
+    "@floating-ui/react" "^0.24.7"
+    "@tamagui/compose-refs" "1.77.1"
+    "@tamagui/core" "1.77.1"
+    "@tamagui/create-context" "1.77.1"
+    "@tamagui/floating" "1.77.1"
+    "@tamagui/get-token" "1.77.1"
+    "@tamagui/polyfill-dev" "1.77.1"
+    "@tamagui/popover" "1.77.1"
+    "@tamagui/popper" "1.77.1"
+    "@tamagui/stacks" "1.77.1"
+    "@tamagui/text" "1.77.1"
+    "@tamagui/use-controllable-state" "1.77.1"
+
 "@tamagui/types@1.77.1":
   version "1.77.1"
   resolved "https://registry.yarnpkg.com/@tamagui/types/-/types-1.77.1.tgz#ecfc7b0ee61636d1e428bdc7e3ab69ea0b4f95ae"
   integrity sha512-6w2N9kFZT27yI6L0a5jygEfaEiOvIdcJSh+4W7lSMS4BuqUcH8nAsMPxo6mb5LN2hZ0JmHniGp8LVkv6OXV3LQ==
+
+"@tamagui/use-callback-ref@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/use-callback-ref/-/use-callback-ref-1.77.1.tgz#a615acd766a94e7e723a5594ab801e3964f179fc"
+  integrity sha512-aTAPO7SoWqEWxIw7fEhLV9cp16xDYBuTtPIm23416iIkQb0Dl0NG0OHXzs2eNU9yD24O2efzVxryH2HDjpt3tA==
+
+"@tamagui/use-constant@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/use-constant/-/use-constant-1.77.1.tgz#883a20ea2711239c4b7d154989d638163f196f9f"
+  integrity sha512-aL1HaqhDTHaw6QI0jaHouHEL3JscLK4ln46PwNaMkkQaadnFIH+OWHmAEdT2qKjvmGcl/eDn5EDo/hWb0mTtbQ==
+
+"@tamagui/use-controllable-state@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/use-controllable-state/-/use-controllable-state-1.77.1.tgz#f82da9426106760bb78a990dfdf468cdd3c65bb2"
+  integrity sha512-3kEQue2cDj0wSxh8mEp9HDsqbCCALxj2TwEnQG618mNRrSUQ1DT2Qxkkh6ouV96ueaWvVEj/+0QAWvuQnoUQ+g==
+  dependencies:
+    "@tamagui/use-event" "1.77.1"
+
+"@tamagui/use-debounce@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/use-debounce/-/use-debounce-1.77.1.tgz#59388fd22c40bd36d8e7608368480d11938379f7"
+  integrity sha512-6baFc/pH8cNQW/dUfQeWoCaPL6AG5rucdfMSog2ihcLpchBnIxwO3jlPHVrG0m91ENcVJcSHzSP1pmlJi8lpww==
 
 "@tamagui/use-did-finish-ssr@1.77.1":
   version "1.77.1"
@@ -2221,6 +3071,18 @@
   integrity sha512-K/HpENhKZQPvrwrISZnDJ91GeFfX06qwu7I/DDs2gKKW+p+Za3rD6Kze2WibSgd40IHVw8Z/IFEjRGdShNsSGQ==
   dependencies:
     "@tamagui/constants" "1.77.1"
+
+"@tamagui/use-direction@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/use-direction/-/use-direction-1.77.1.tgz#c91c48f2cbcd9b14530ecf84f8bd231d1452719e"
+  integrity sha512-+vd6femPlEkm2AFpMJTicMFUnBeqX5NULUg6/gsXmZcKz3qDKlGM1V/ftB5ooUpfhLbzYjWBTd+kkq+Fr+z8hg==
+
+"@tamagui/use-escape-keydown@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/use-escape-keydown/-/use-escape-keydown-1.77.1.tgz#0761d5eec654bbeb05fb1b6ca0402c08dc586b9c"
+  integrity sha512-oQUf1AZamcJeEhx2OhLn2jnPPIEhsrWxvnAk29vnCws3abJP0jJaSOxUdUrrG6AHrZpgpTDN2mbl2QKQq0nXBg==
+  dependencies:
+    "@tamagui/use-callback-ref" "1.77.1"
 
 "@tamagui/use-event@1.77.1":
   version "1.77.1"
@@ -2231,6 +3093,37 @@
   version "1.77.1"
   resolved "https://registry.yarnpkg.com/@tamagui/use-force-update/-/use-force-update-1.77.1.tgz#e2f389b56421fa1c5bcda2e6242ed8bc98d3ccdd"
   integrity sha512-AeiH9IO/ZvnP0X1oeRgAAGrIQOwScQKUVH89rH4KjpstlA4qx5uS64CDzS6st4dB4T9hge9ok//ntdptfudx+Q==
+
+"@tamagui/use-keyboard-visible@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/use-keyboard-visible/-/use-keyboard-visible-1.77.1.tgz#d1e20831dc5e0cc7cd2c1de9b5a1411592e12757"
+  integrity sha512-K7RCotdLQtLGPCeWlMUBgPu3zW0MjCBe7Q7tlk4rvU13z8o9x0rnXl1fUW4FK1rTucSBhrUdgFdMKrycgv7bLQ==
+
+"@tamagui/use-presence@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/use-presence/-/use-presence-1.77.1.tgz#60b3d95a8e8ad9a47352b8953a48213e7a0e2140"
+  integrity sha512-4XgrURE2k4zqf9Na3lFUvafcOjtwYL+8YOhjYvOLppHEkMwpq7DXo6d4UEBXsiJ71V8Y9S7sRX8yLYPzG57WPA==
+  dependencies:
+    "@tamagui/web" "1.77.1"
+
+"@tamagui/use-previous@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/use-previous/-/use-previous-1.77.1.tgz#53bf0da6e0918172717a27e458ec482c9bbe6727"
+  integrity sha512-9FjIhEe0+MZoXSdOdiRjSPpKAi2SuzKIHea6Eu8i/AhYJgMo5v+CD0X+Pgmxc/QnB8RuR4j+hKpc9CZIXMDClw==
+
+"@tamagui/use-window-dimensions@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/use-window-dimensions/-/use-window-dimensions-1.77.1.tgz#7c958f9cdd0c36a2c5dadfd23fa5557340e00d8a"
+  integrity sha512-3fWO+v8BOufwmn351t/Y/irEvUXt7Bn+Sv/zzQ8qnBRQ8V2ffn+eoX2POuJ9FU74dPEBh+W7xlS198FXGGHh6w==
+  dependencies:
+    "@tamagui/constants" "1.77.1"
+
+"@tamagui/visually-hidden@1.77.1":
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/visually-hidden/-/visually-hidden-1.77.1.tgz#74145f6815378c21d7700502a6e41c3c47930a9d"
+  integrity sha512-5HFJ+s6SphFbeiwPb1cZrTn9T2c6ceWY4lXbWFENF/yeGq3bzCfF2xAOl82WZTVHCZxWgFTlwU7EAxlPecNogA==
+  dependencies:
+    "@tamagui/web" "1.77.1"
 
 "@tamagui/web@1.77.1":
   version "1.77.1"
@@ -2251,6 +3144,11 @@
   integrity sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==
   dependencies:
     "@types/node" "*"
+
+"@types/hammerjs@^2.0.36":
+  version "2.0.44"
+  resolved "https://registry.yarnpkg.com/@types/hammerjs/-/hammerjs-2.0.44.tgz#d90637ee049c4cf44cd8fa0072afca2124f947be"
+  integrity sha512-pdGBkAh4ggfXAkiwgmTdROJe3mwvLWJYm6JiaAwCtskAU0Weh+JQyyMTbhvxjxD2n8sr8PrxVwyDzmpnK4pUrQ==
 
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0":
   version "2.0.6"
@@ -2486,6 +3384,13 @@ argparse@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/argparse/-/argparse-2.0.1.tgz#246f50f3ca78a3240f6c997e8a9bd1eac49e4b38"
   integrity sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==
+
+aria-hidden@^1.1.3, aria-hidden@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/aria-hidden/-/aria-hidden-1.2.3.tgz#14aeb7fb692bbb72d69bebfa47279c1fd725e954"
+  integrity sha512-xcLxITLe2HYa1cnYnwCjkOO1PqUHQpozB8x9AR0OgWN2woOBi5kSDVxKfd0b7sb1hw5qFeJhXm9H1nu3xSfLeQ==
+  dependencies:
+    tslib "^2.0.0"
 
 array-union@^2.1.0:
   version "2.1.0"
@@ -3011,10 +3916,26 @@ color-name@1.1.3:
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
   integrity sha512-72fSenhMw2HZMTVHeCA9KCmpEIbzWiQsjN+BHcBbS9vr1mtt+vJjPdksIBNUmKAW8TFUDPJK5SUU3QhE9NEXDw==
 
-color-name@~1.1.4:
+color-name@^1.0.0, color-name@~1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
+
+color-string@^1.9.0:
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/color-string/-/color-string-1.9.1.tgz#4467f9146f036f855b764dfb5bf8582bf342c7a4"
+  integrity sha512-shrVawQFojnZv6xM40anx4CkoDP+fZsw/ZerEMsW/pyzsRbElpsL/DBVW7q3ExxwusdNXI3lXpuhEZkzs8p5Eg==
+  dependencies:
+    color-name "^1.0.0"
+    simple-swizzle "^0.2.2"
+
+color@^4.2.3:
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/color/-/color-4.2.3.tgz#d781ecb5e57224ee43ea9627560107c0e0c6463a"
+  integrity sha512-1rXeuUUiGGrykh+CeBdu5Ie7OJwinCgQY0bc7GCRxy5xVHy+moaqkpL/jqQq0MtQOeYcrqEz4abc5f0KtU7W4A==
+  dependencies:
+    color-convert "^2.0.1"
+    color-string "^1.9.0"
 
 colorette@^1.0.7:
   version "1.4.0"
@@ -3230,6 +4151,11 @@ decamelize@^1.2.0:
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
   integrity sha512-z2S+W9X73hAUUki+N+9Za2lBlun89zigOyGrsax+KUQ6wKW4ZoWpEYBkGhQjwAjjDCkWxhY0VKEhk8wzY7F5cA==
 
+decode-uri-component@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
+
 deep-extend@^0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/deep-extend/-/deep-extend-0.6.0.tgz#c4fa7c95404a17a9c3e8ca7e1537312b736330ac"
@@ -3316,6 +4242,11 @@ detect-libc@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-1.0.3.tgz#fa137c4bd698edf55cd5cd02ac559f91a4c4ba9b"
   integrity sha512-pGjwhsmsp4kL2RTz08wcOlGN83otlqHeD/Z5T8GXZB+/YcpQ/dgo+lbU8ZsGxV0HIvqqxo9l7mqYwyYMD9bKDg==
+
+detect-node-es@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/detect-node-es/-/detect-node-es-1.1.0.tgz#163acdf643330caa0b4cd7c21e7ee7755d6fa493"
+  integrity sha512-ypdmJU/TbBby2Dxibuv7ZLW3Bs1QEmM7nHjEANfohJLvE0XVujisn1qPJcZxg+qDucsr+bP6fLD1rPS3AhJ7EQ==
 
 dir-glob@^3.0.1:
   version "3.0.1"
@@ -3453,6 +4384,11 @@ escape-string-regexp@^2.0.0:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-2.0.0.tgz#a30304e99daa32e23b2fd20f51babd07cffca344"
   integrity sha512-UpzcLCXolUWcNu5HtVMHYdXJjArjsF9C0aNnquZYY4uW/Vu0miy5YoWvbV345HauVvcAUnpRuhMMcqTcGOY2+w==
 
+escape-string-regexp@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
+  integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
+
 esprima@^4.0.0, esprima@~4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-4.0.1.tgz#13b04cdb3e6c5d19df91ab6987a8695619b0aa71"
@@ -3539,6 +4475,13 @@ expo-file-system@~15.4.0, expo-file-system@~15.4.4:
   dependencies:
     uuid "^3.4.0"
 
+expo-font@^11.6.0:
+  version "11.6.0"
+  resolved "https://registry.yarnpkg.com/expo-font/-/expo-font-11.6.0.tgz#7c1c8c82e3b437d54d911808fdf03578763913f3"
+  integrity sha512-ekfU0MN7vzJNGwQCJhxnhF2M9Fq/RtVF5xSQpr8+f4ISPimmKfEcArMHKCl4oG3saFVjSRX7fLbo38WOv3z5Mw==
+  dependencies:
+    fontfaceobserver "^2.1.0"
+
 expo-font@~11.4.0:
   version "11.4.0"
   resolved "https://registry.yarnpkg.com/expo-font/-/expo-font-11.4.0.tgz#e2d31c0bb76ba3c37c2d84703a49aeafc3afef28"
@@ -3601,6 +4544,11 @@ expo@~49.0.15:
     node-fetch "^2.6.7"
     pretty-format "^26.5.2"
     uuid "^3.4.0"
+
+fast-deep-equal@^3.1.3:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
+  integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
 
 fast-glob@^3.2.11, fast-glob@^3.2.5, fast-glob@^3.2.9:
   version "3.3.2"
@@ -3675,6 +4623,11 @@ fill-range@^7.0.1:
   integrity sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==
   dependencies:
     to-regex-range "^5.0.1"
+
+filter-obj@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/filter-obj/-/filter-obj-1.1.0.tgz#9b311112bc6c6127a16e016c6c5d7f19e0805c5b"
+  integrity sha512-8rXg1ZnX7xzy2NGDVkBVaAy+lSlPNwad13BtgSlLuxfIslyt5Vg64U7tFcCt4WS1R0hvtnQybT/IyCkGZ3DpXQ==
 
 finalhandler@1.1.2:
   version "1.1.2"
@@ -3779,6 +4732,27 @@ form-data@^3.0.1:
     combined-stream "^1.0.8"
     mime-types "^2.1.12"
 
+framer-motion@^6.5.1:
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-6.5.1.tgz#802448a16a6eb764124bf36d8cbdfa6dd6b931a7"
+  integrity sha512-o1BGqqposwi7cgDrtg0dNONhkmPsUFDaLcKXigzuTFC5x58mE8iyTazxSudFzmT6MEyJKfjjU8ItoMe3W+3fiw==
+  dependencies:
+    "@motionone/dom" "10.12.0"
+    framesync "6.0.1"
+    hey-listen "^1.0.8"
+    popmotion "11.0.3"
+    style-value-types "5.0.0"
+    tslib "^2.1.0"
+  optionalDependencies:
+    "@emotion/is-prop-valid" "^0.8.2"
+
+framesync@6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/framesync/-/framesync-6.0.1.tgz#5e32fc01f1c42b39c654c35b16440e07a25d6f20"
+  integrity sha512-fUY88kXvGiIItgNC7wcTOl0SNRCVXMKSWW2Yzfmn7EKNc+MpCzcz9DhdHcdjbrtN3c6R4H5dTY2jiCpPdysEjA==
+  dependencies:
+    tslib "^2.1.0"
+
 freeport-async@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/freeport-async/-/freeport-async-2.0.0.tgz#6adf2ec0c629d11abff92836acd04b399135bab4"
@@ -3868,6 +4842,11 @@ get-intrinsic@^1.0.2, get-intrinsic@^1.1.3, get-intrinsic@^1.2.1, get-intrinsic@
     has-proto "^1.0.1"
     has-symbols "^1.0.3"
     hasown "^2.0.0"
+
+get-nonce@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/get-nonce/-/get-nonce-1.0.1.tgz#fdf3f0278073820d2ce9426c18f07481b1e0cdf3"
+  integrity sha512-FJhYRoDaiatfEkUK8HKlicmu/3SGFD51q3itKDGoSTysQJBnfOcxU5GxnhE1E6soB76MbT0MBtnKJuXyAx+96Q==
 
 get-port@^3.2.0:
   version "3.2.0"
@@ -4045,6 +5024,18 @@ hermes-profile-transformer@^0.0.6:
   dependencies:
     source-map "^0.7.3"
 
+hey-listen@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/hey-listen/-/hey-listen-1.0.8.tgz#8e59561ff724908de1aa924ed6ecc84a56a9aa68"
+  integrity sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==
+
+hoist-non-react-statics@^3.3.0:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
+  integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
+  dependencies:
+    react-is "^16.7.0"
+
 hosted-git-info@^3.0.2:
   version "3.0.8"
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-3.0.8.tgz#6e35d4cc87af2c5f816e4cb9ce350ba87a3f370d"
@@ -4188,6 +5179,11 @@ is-arrayish@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/is-arrayish/-/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
   integrity sha512-zz06S8t0ozoDXMG+ube26zeCTNXcKIPJZJi8hBrF4idCLms4CG9QtK7qBl1boi5ODzFpjswb5JPmHCbMpjaYzg==
+
+is-arrayish@^0.3.1:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/is-arrayish/-/is-arrayish-0.3.2.tgz#4574a2ae56f7ab206896fb431eaeed066fdf8f03"
+  integrity sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==
 
 is-binary-path@~2.1.0:
   version "2.1.0"
@@ -5177,6 +6173,18 @@ mkdirp@^1.0.3, mkdirp@^1.0.4:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
+module-resolver@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/module-resolver/-/module-resolver-1.0.0.tgz#d412c0b66e08588cd39347a60c3c818bc9119fb5"
+  integrity sha512-W1RUbays629I+JtqOnjjiPCad5wsfLCW+CxcmgU+tsQSkKqmIFk1tHfmG3OauB1utmKasHCSIQ2Y2xBJTyGsjQ==
+
+moti@^0.25.3:
+  version "0.25.4"
+  resolved "https://registry.yarnpkg.com/moti/-/moti-0.25.4.tgz#772f50eda85ee65d6a31bdc601d6c43d08a736b3"
+  integrity sha512-UiH0WcWzUYlUmo8Y1F+iyVW+qVVZ3YkXO3Q/gQUZzOhje6+Q0MdllYfqKW2m5IhFs+Vxt2i+osjvWBxXKK2yOw==
+  dependencies:
+    framer-motion "^6.5.1"
+
 ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
@@ -5210,7 +6218,7 @@ mz@^2.7.0:
     object-assign "^4.0.1"
     thenify-all "^1.0.0"
 
-nanoid@^3.3.6:
+nanoid@^3.1.23, nanoid@^3.3.6:
   version "3.3.7"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.7.tgz#d0c301a691bc8d54efa0a2226ccf3fe2fd656bd8"
   integrity sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==
@@ -5554,6 +6562,11 @@ path-type@^4.0.0:
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
+performant-array-to-tree@^1.11.0:
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/performant-array-to-tree/-/performant-array-to-tree-1.11.0.tgz#cbb6c4a1a41a89b3a209dca7a8715cbe7d5a6a33"
+  integrity sha512-YwCqIDvnaebXaKuKQhI5yJD6ryDc3FxvoeX/5ougXTKDUWb7s5S2BuBgIyftCa4sBe1+ZU5Kmi4RJy+pjjjrpw==
+
 picocolors@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.0.0.tgz#cb5bdc74ff3f51892236eaf79d68bc44564ab81c"
@@ -5608,6 +6621,16 @@ pngjs@^3.3.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/pngjs/-/pngjs-3.4.0.tgz#99ca7d725965fb655814eaf65f38f12bbdbf555f"
   integrity sha512-NCrCHhWmnQklfH4MtJMRjZ2a8c80qXeMlQMv2uVp9ISJMTt562SbGd6n2oq0PaPgKm7Z6pL9E2UlLIhC+SHL3w==
+
+popmotion@11.0.3:
+  version "11.0.3"
+  resolved "https://registry.yarnpkg.com/popmotion/-/popmotion-11.0.3.tgz#565c5f6590bbcddab7a33a074bb2ba97e24b0cc9"
+  integrity sha512-Y55FLdj3UxkR7Vl3s7Qr4e9m0onSnP8W7d/xQLsoJM40vs6UKHFdygs6SWryasTZYqugMjm3BepCF4CWXDiHgA==
+  dependencies:
+    framesync "6.0.1"
+    hey-listen "^1.0.8"
+    style-value-types "5.0.0"
+    tslib "^2.1.0"
 
 postcss-value-parser@^4.2.0:
   version "4.2.0"
@@ -5684,7 +6707,7 @@ prompts@^2.3.2, prompts@^2.4.0:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@*:
+prop-types@*, prop-types@^15.7.2:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -5712,6 +6735,16 @@ qs@6.11.0:
   integrity sha512-MvjoMCJwEarSbUYk5O+nmoSzSutSsTwF85zcHPQ9OrlFoZOYIjaqBAJIqIXjptyD5vThxGq52Xu/MaJzRkIk4Q==
   dependencies:
     side-channel "^1.0.4"
+
+query-string@^7.1.3:
+  version "7.1.3"
+  resolved "https://registry.yarnpkg.com/query-string/-/query-string-7.1.3.tgz#a1cf90e994abb113a325804a972d98276fe02328"
+  integrity sha512-hh2WYhq4fi8+b+/2Kg9CEge4fDPvHS534aOOvOZeQ3+Vf2mCFsaFBYj0i+iXcAq6I9Vzp5fjMFBlONvayDC1qg==
+  dependencies:
+    decode-uri-component "^0.2.2"
+    filter-obj "^1.1.0"
+    split-on-first "^1.0.0"
+    strict-uri-encode "^2.0.0"
 
 querystringify@^2.1.1:
   version "2.2.0"
@@ -5763,12 +6796,25 @@ react-devtools-core@^4.27.2:
     shell-quote "^1.6.1"
     ws "^7"
 
+react-dom@^18.2.0:
+  version "18.2.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.2.0.tgz#22aaf38708db2674ed9ada224ca4aa708d821e3d"
+  integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
+  dependencies:
+    loose-envify "^1.1.0"
+    scheduler "^0.23.0"
+
+react-freeze@^1.0.0, react-freeze@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/react-freeze/-/react-freeze-1.0.3.tgz#5e3ca90e682fed1d73a7cb50c2c7402b3e85618d"
+  integrity sha512-ZnXwLQnGzrDpHBHiC56TXFXvmolPeMjTn1UOm610M4EXGzbEDR7oOIyS2ZiItgbs6eZc4oU/a0hpk8PrcKvv5g==
+
 "react-is@^16.12.0 || ^17.0.0 || ^18.0.0", react-is@^18.0.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
-react-is@^16.13.1:
+react-is@^16.13.0, react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
@@ -5778,15 +6824,39 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
-react-native-reanimated@~3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-3.3.0.tgz#80f9d58e28fddf62fe4c1bc792337b8ab57936ab"
-  integrity sha512-LzfpPZ1qXBGy5BcUHqw3pBC0qSd22qXS3t8hWSbozXNrBkzMhhOrcILE/nEg/PHpNNp1xvGOW8NwpAMF006roQ==
+react-native-gesture-handler@^2.13.4:
+  version "2.13.4"
+  resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-2.13.4.tgz#6a99384330278c4488bcfc7f1814be3e0d7401fd"
+  integrity sha512-smpYOVbvWABpq2H+lmDnfOLCTH934aUPO1w2/pQXvm1j+M/vmGQmvgRDJOpXcks17HLtNNKXD6tcODf3aPqDfA==
+  dependencies:
+    "@egjs/hammerjs" "^2.0.17"
+    hoist-non-react-statics "^3.3.0"
+    invariant "^2.2.4"
+    lodash "^4.17.21"
+    prop-types "^15.7.2"
+
+react-native-reanimated@^3.5.4:
+  version "3.5.4"
+  resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-3.5.4.tgz#a6c2b0c43b6dad246f5d276213974afedb8e3fc7"
+  integrity sha512-8we9LLDO1o4Oj9/DICeEJ2K1tjfqkJagqQUglxeUAkol/HcEJ6PGxIrpBcNryLqCDYEcu6FZWld/FzizBIw6bg==
   dependencies:
     "@babel/plugin-transform-object-assign" "^7.16.7"
     "@babel/preset-typescript" "^7.16.7"
     convert-source-map "^2.0.0"
     invariant "^2.2.4"
+
+react-native-safe-area-context@^4.7.4:
+  version "4.7.4"
+  resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-4.7.4.tgz#3dd8438971e70043d76f2428ede75b8a9639265e"
+  integrity sha512-3LR3DCq9pdzlbq6vsHGWBFehXAKDh2Ljug6jWhLWs1QFuJHM6AS2+mH2JfKlB2LqiSFZOBcZfHQFz0sGaA3uqg==
+
+react-native-screens@^3.27.0:
+  version "3.27.0"
+  resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-3.27.0.tgz#2ac39f78dee27df97d3b6fb11ebf8e5751aa986a"
+  integrity sha512-FzSUygZ7yLQyhDJZsl7wU68LwRpVtVdqOPWribmEU3Tf26FohFGGcfJx1D8lf2V2Teb8tI+IaLnXCKbyh2xffA==
+  dependencies:
+    react-freeze "^1.0.0"
+    warn-once "^0.1.0"
 
 react-native-web-internals@1.77.1:
   version "1.77.1"
@@ -5809,7 +6879,7 @@ react-native-web-lite@1.77.1:
     react-native-web-internals "1.77.1"
     styleq "^0.1.3"
 
-react-native-web@^0.19.6:
+react-native-web@^0.19.6, react-native-web@^0.19.9:
   version "0.19.9"
   resolved "https://registry.yarnpkg.com/react-native-web/-/react-native-web-0.19.9.tgz#6ee43e6c64d886b1d739f100fed07927541ee003"
   integrity sha512-m69arZbS6FV+BNSKE6R/NQwUX+CzxCkYM7AJlSLlS8dz3BDzlaxG8Bzqtzv/r3r1YFowhnZLBXVKIwovKDw49g==
@@ -5865,10 +6935,34 @@ react-native@0.72.6:
     ws "^6.2.2"
     yargs "^17.6.2"
 
+react-navigation@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/react-navigation/-/react-navigation-5.0.0.tgz#a7dd98a6148ba997834ebcf5a5073bdb3d4f4eb3"
+  integrity sha512-ACTzjc4L1ik7rJ092ZhIELBJ/pnoLgRIqWHSKcYcaBASxyjJCgBEDIV5s585HBj55tw25YwNdlj3+d4B4MYWDg==
+
 react-refresh@^0.4.0:
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.4.3.tgz#966f1750c191672e76e16c2efa569150cc73ab53"
   integrity sha512-Hwln1VNuGl/6bVwnd0Xdn1e84gT/8T9aYNL+HAKDArLCS7LWjwr7StE30IEYbIkx0Vi3vs+coQxe+SQDbGbbpA==
+
+react-remove-scroll-bar@^2.3.4:
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/react-remove-scroll-bar/-/react-remove-scroll-bar-2.3.4.tgz#53e272d7a5cb8242990c7f144c44d8bd8ab5afd9"
+  integrity sha512-63C4YQBUt0m6ALadE9XV56hV8BgJWDmmTPY758iIJjfQKt2nYwoUrPk0LXRXcB/yIj82T1/Ixfdpdk68LwIB0A==
+  dependencies:
+    react-style-singleton "^2.2.1"
+    tslib "^2.0.0"
+
+react-remove-scroll@^2.5.5:
+  version "2.5.7"
+  resolved "https://registry.yarnpkg.com/react-remove-scroll/-/react-remove-scroll-2.5.7.tgz#15a1fd038e8497f65a695bf26a4a57970cac1ccb"
+  integrity sha512-FnrTWO4L7/Bhhf3CYBNArEG/yROV0tKmTv7/3h9QCFvH6sndeFf1wPqOcbFVu5VAulS5dV1wGT3GZZ/1GawqiA==
+  dependencies:
+    react-remove-scroll-bar "^2.3.4"
+    react-style-singleton "^2.2.1"
+    tslib "^2.1.0"
+    use-callback-ref "^1.3.0"
+    use-sidecar "^1.1.2"
 
 react-shallow-renderer@^16.15.0:
   version "16.15.0"
@@ -5878,7 +6972,16 @@ react-shallow-renderer@^16.15.0:
     object-assign "^4.1.1"
     react-is "^16.12.0 || ^17.0.0 || ^18.0.0"
 
-react@18.2.0:
+react-style-singleton@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/react-style-singleton/-/react-style-singleton-2.2.1.tgz#f99e420492b2d8f34d38308ff660b60d0b1205b4"
+  integrity sha512-ZWj0fHEMyWkHzKYUr2Bs/4zU6XLmq9HsgBURm7g5pAVfyn49DgUiNgY2d4lXRlYSiCif9YBGpQleewkcqddc7g==
+  dependencies:
+    get-nonce "^1.0.0"
+    invariant "^2.2.4"
+    tslib "^2.0.0"
+
+react@18.2.0, react@^18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
@@ -5928,6 +7031,14 @@ recast@^0.21.0:
     esprima "~4.0.0"
     source-map "~0.6.1"
     tslib "^2.0.1"
+
+reforest@^0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/reforest/-/reforest-0.13.0.tgz#5275f593e1190bda39e375d6d394d67cedbd20b4"
+  integrity sha512-f0It/s51f1UWCCCni0viULALDBhxWBPFnLmZRYtKcz4zYeNWqeNTdcnU/OpBry9tk+jyMQcH3MLK8UdzsAvA5w==
+  dependencies:
+    performant-array-to-tree "^1.11.0"
+    zustand "^4.3.8"
 
 regenerate-unicode-properties@^10.1.0:
   version "10.1.1"
@@ -6135,6 +7246,13 @@ scheduler@0.24.0-canary-efb381bbf-20230505:
   dependencies:
     loose-envify "^1.1.0"
 
+scheduler@^0.23.0:
+  version "0.23.0"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.23.0.tgz#ba8041afc3d30eb206a487b6b384002e4e61fdfe"
+  integrity sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==
+  dependencies:
+    loose-envify "^1.1.0"
+
 semver@7.3.2:
   version "7.3.2"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.3.2.tgz#604962b052b81ed0786aae84389ffba70ffd3938"
@@ -6289,6 +7407,13 @@ simple-plist@^1.1.0:
     bplist-parser "0.3.1"
     plist "^3.0.5"
 
+simple-swizzle@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/simple-swizzle/-/simple-swizzle-0.2.2.tgz#a4da6b635ffcccca33f70d17cb92592de95e557a"
+  integrity sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==
+  dependencies:
+    is-arrayish "^0.3.1"
+
 sisteransi@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-1.0.5.tgz#134d681297756437cc05ca01370d3a7a571075ed"
@@ -6340,6 +7465,11 @@ source-map@^0.7.3:
   version "0.7.4"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.7.4.tgz#a9bbe705c9d8846f4e08ff6765acf0f1b0898656"
   integrity sha512-l3BikUxvPOcn5E74dZiq5BGsTb5yEwhaTSzccU6t4sDOH8NWJCstKO5QT2CvtFoK6F0saL7p9xHAqHOlCPJygA==
+
+split-on-first@^1.0.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/split-on-first/-/split-on-first-1.1.0.tgz#f610afeee3b12bce1d0c30425e76398b78249a5f"
+  integrity sha512-43ZssAJaMusuKWL8sKUBQXHWOpq8d6CfN/u1p4gUzfJkM05C8rxTmYrkIPTXapZpORA6LkkzcUulJ8FqA7Uudw==
 
 split@^1.0.1:
   version "1.0.1"
@@ -6393,6 +7523,11 @@ stream-buffers@2.2.x:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/stream-buffers/-/stream-buffers-2.2.0.tgz#91d5f5130d1cef96dcfa7f726945188741d09ee4"
   integrity sha512-uyQK/mx5QjHun80FLJTfaWE7JtwfRMKBLkMne6udYOmvH0CawotVa7TfgYHzAnpphn4+TweIx1QKMnRIbipmUg==
+
+strict-uri-encode@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/strict-uri-encode/-/strict-uri-encode-2.0.0.tgz#b9c7330c7042862f6b142dc274bbcc5866ce3546"
+  integrity sha512-QwiXZgpRcKkhTj2Scnn++4PKtWsH0kpzZ62L2R6c/LUVYv7hVnZqcg2+sMuT6R7Jusu1vviK/MFsu6kNJfWlEQ==
 
 string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
   version "4.2.3"
@@ -6455,6 +7590,14 @@ structured-headers@^0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/structured-headers/-/structured-headers-0.4.1.tgz#77abd9410622c6926261c09b9d16cf10592694d1"
   integrity sha512-0MP/Cxx5SzeeZ10p/bZI0S6MpgD+yxAhi1BOQ34jgnMXsCq3j1t6tQnZu+KdlL7dvJTLT3g9xN8tl10TqgFMcg==
+
+style-value-types@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/style-value-types/-/style-value-types-5.0.0.tgz#76c35f0e579843d523187989da866729411fc8ad"
+  integrity sha512-08yq36Ikn4kx4YU6RD7jWEv27v4V+PUsOGa4n/as8Et3CuODMJQ00ENeAVXAeydX4Z2j1XHZF1K2sX4mGl18fA==
+  dependencies:
+    hey-listen "^1.0.8"
+    tslib "^2.1.0"
 
 styleq@^0.1.3:
   version "0.1.3"
@@ -6522,6 +7665,68 @@ supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
+
+tabbable@^6.0.1:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/tabbable/-/tabbable-6.2.0.tgz#732fb62bc0175cfcec257330be187dcfba1f3b97"
+  integrity sha512-Cat63mxsVJlzYvN51JmVXIgNoUokrIaT2zLclCXjRd8boZ0004U4KCs/sToJ75C6sdlByWxpYnb5Boif1VSFew==
+
+tamagui@^1.77.1:
+  version "1.77.1"
+  resolved "https://registry.yarnpkg.com/tamagui/-/tamagui-1.77.1.tgz#1d799a306c3b0e94883642f440753e0b80a2e401"
+  integrity sha512-1fXrM8b1vNWWk7zUvCkTS7FK0956xeiGNDAsLrXtMnrRiYNU/U7khhNe/IaKmWod+0TkjMQMkCx581LWKQ1S4A==
+  dependencies:
+    "@tamagui/accordion" "1.77.1"
+    "@tamagui/adapt" "1.77.1"
+    "@tamagui/alert-dialog" "1.77.1"
+    "@tamagui/animate-presence" "1.77.1"
+    "@tamagui/avatar" "1.77.1"
+    "@tamagui/button" "1.77.1"
+    "@tamagui/card" "1.77.1"
+    "@tamagui/checkbox" "1.77.1"
+    "@tamagui/compose-refs" "1.77.1"
+    "@tamagui/core" "1.77.1"
+    "@tamagui/create-context" "1.77.1"
+    "@tamagui/dialog" "1.77.1"
+    "@tamagui/fake-react-native" "1.77.1"
+    "@tamagui/focusable" "1.77.1"
+    "@tamagui/font-size" "1.77.1"
+    "@tamagui/form" "1.77.1"
+    "@tamagui/get-button-sized" "1.77.1"
+    "@tamagui/get-font-sized" "1.77.1"
+    "@tamagui/get-token" "1.77.1"
+    "@tamagui/helpers" "1.77.1"
+    "@tamagui/helpers-tamagui" "1.77.1"
+    "@tamagui/image" "1.77.1"
+    "@tamagui/label" "1.77.1"
+    "@tamagui/linear-gradient" "1.77.1"
+    "@tamagui/list-item" "1.77.1"
+    "@tamagui/polyfill-dev" "1.77.1"
+    "@tamagui/popover" "1.77.1"
+    "@tamagui/popper" "1.77.1"
+    "@tamagui/portal" "1.77.1"
+    "@tamagui/progress" "1.77.1"
+    "@tamagui/radio-group" "1.77.1"
+    "@tamagui/react-native-media-driver" "1.77.1"
+    "@tamagui/scroll-view" "1.77.1"
+    "@tamagui/select" "1.77.1"
+    "@tamagui/separator" "1.77.1"
+    "@tamagui/shapes" "1.77.1"
+    "@tamagui/sheet" "1.77.1"
+    "@tamagui/slider" "1.77.1"
+    "@tamagui/stacks" "1.77.1"
+    "@tamagui/switch" "1.77.1"
+    "@tamagui/tabs" "1.77.1"
+    "@tamagui/text" "1.77.1"
+    "@tamagui/theme" "1.77.1"
+    "@tamagui/toggle-group" "1.77.1"
+    "@tamagui/tooltip" "1.77.1"
+    "@tamagui/use-controllable-state" "1.77.1"
+    "@tamagui/use-debounce" "1.77.1"
+    "@tamagui/use-force-update" "1.77.1"
+    "@tamagui/use-window-dimensions" "1.77.1"
+    "@tamagui/visually-hidden" "1.77.1"
+    reforest "^0.13.0"
 
 tar@^6.0.2, tar@^6.0.5:
   version "6.2.0"
@@ -6671,7 +7876,7 @@ ts-interface-checker@^0.1.9:
   resolved "https://registry.yarnpkg.com/ts-interface-checker/-/ts-interface-checker-0.1.13.tgz#784fd3d679722bc103b1b4b8030bcddb5db2a699"
   integrity sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==
 
-tslib@^2.0.1, tslib@^2.1.0, tslib@^2.4.0:
+tslib@^2.0.0, tslib@^2.0.1, tslib@^2.1.0, tslib@^2.3.1, tslib@^2.4.0:
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.2.tgz#703ac29425e7b37cd6fd456e92404d46d1f3e4ae"
   integrity sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==
@@ -6829,7 +8034,27 @@ url-parse@^1.5.9:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
 
-use-sync-external-store@^1.0.0:
+use-callback-ref@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/use-callback-ref/-/use-callback-ref-1.3.0.tgz#772199899b9c9a50526fedc4993fc7fa1f7e32d5"
+  integrity sha512-3FT9PRuRdbB9HfXhEq35u4oZkvpJ5kuYbpqhCfmiZyReuRgpnhDlbr2ZEnnuS0RrJAPn6l23xjFg9kpDM+Ms7w==
+  dependencies:
+    tslib "^2.0.0"
+
+use-latest-callback@^0.1.7:
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/use-latest-callback/-/use-latest-callback-0.1.9.tgz#10191dc54257e65a8e52322127643a8940271e2a"
+  integrity sha512-CL/29uS74AwreI/f2oz2hLTW7ZqVeV5+gxFeGudzQrgkCytrHw33G4KbnQOrRlAEzzAFXi7dDLMC9zhWcVpzmw==
+
+use-sidecar@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/use-sidecar/-/use-sidecar-1.1.2.tgz#2f43126ba2d7d7e117aa5855e5d8f0276dfe73c2"
+  integrity sha512-epTbsLuzZ7lPClpz2TyryBfztm7m+28DlEv2ZCQ3MDr5ssiwyOwGH/e5F9CkfWjJ1t4clvI58yF822/GUkjjhw==
+  dependencies:
+    detect-node-es "^1.1.0"
+    tslib "^2.0.0"
+
+use-sync-external-store@1.2.0, use-sync-external-store@^1.0.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz#7dbefd6ef3fe4e767a0cf5d7287aacfb5846928a"
   integrity sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==
@@ -6887,6 +8112,11 @@ walker@^1.0.7:
   integrity sha512-ts/8E8l5b7kY0vlWLewOkDXMmPdLcVV4GmOQLyxuSswIJsweeFZtAsMF7k1Nszz+TYBQrlYRmzOnr398y1JemQ==
   dependencies:
     makeerror "1.0.12"
+
+warn-once@^0.1.0:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/warn-once/-/warn-once-0.1.1.tgz#952088f4fb56896e73fd4e6a3767272a3fccce43"
+  integrity sha512-VkQZJbO8zVImzYFteBXvBOZEl1qL175WH8VmZcxF2fZAoudNhNDvHi+doCaAEdU2l2vtcIwa2zn0QK5+I1HQ3Q==
 
 wcwidth@^1.0.1:
   version "1.0.1"
@@ -7099,3 +8329,10 @@ yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
+
+zustand@^4.3.8:
+  version "4.4.6"
+  resolved "https://registry.yarnpkg.com/zustand/-/zustand-4.4.6.tgz#03c78e3e2686c47095c93714c0c600b72a6512bd"
+  integrity sha512-Rb16eW55gqL4W2XZpJh0fnrATxYEG3Apl2gfHTyDSE965x/zxslTikpNch0JgNjJA9zK6gEFW8Fl6d1rTZaqgg==
+  dependencies:
+    use-sync-external-store "1.2.0"
